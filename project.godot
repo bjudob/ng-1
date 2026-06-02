@@ -14,6 +14,15 @@ config/name="ng1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://images/icon.svg"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/size/borderless=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
