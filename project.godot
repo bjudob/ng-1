@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="ng1"
+run/main_scene="uid://dn4pdpp6bu7e3"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://images/icon.svg"
 
@@ -30,8 +31,8 @@ layout/default_style="Default"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/size/viewport_width=2560
+window/size/viewport_height=1600
 window/size/mode=3
 window/size/borderless=true
 window/stretch/mode="viewport"
@@ -39,7 +40,7 @@ window/stretch/aspect="keep_width"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GDQuest_GDScript_formatter/plugin.cfg", "res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 
