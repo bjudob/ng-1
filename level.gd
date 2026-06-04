@@ -1,24 +1,13 @@
-extends Node2D
 
-enum Level {
-	# ui
-	MAIN_MENU,
-	# areas
-	START,
-}
+extends Node
 
-@onready var level_to_scene = {
-	Level.MAIN_MENU: $MainMenu,
-	Level.START: $Start,
-}
+@export var background_music = load("res://music/dark_orchestra.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
-func 
