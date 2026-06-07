@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xievaolqcdk7"
-path="res://.godot/imported/background_goth_mask_right.png-af6b341dc903c8409783e92da8b47a29.ctex"
+uid="uid://ckd1wmfb7oxln"
+path="res://.godot/imported/pigeon.png-c90362efbaf1f879a1bde7677a130b1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/buttons_goth/background_goth_mask_right.png"
-dest_files=["res://.godot/imported/background_goth_mask_right.png-af6b341dc903c8409783e92da8b47a29.ctex"]
+source_file="res://images/characters/pigeon.png"
+dest_files=["res://.godot/imported/pigeon.png-c90362efbaf1f879a1bde7677a130b1b.ctex"]
 
 [params]
 

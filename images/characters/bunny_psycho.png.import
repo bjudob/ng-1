@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4k1v0rvfm8tl"
-path="res://.godot/imported/background_goth_mask.png-4ada581edf4bf60b903c629d1d4d413d.ctex"
+uid="uid://xewat2hdq1ik"
+path="res://.godot/imported/bunny_psycho.png-dfae819866b89a05776709972b6c016f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/buttons_goth/background_goth_mask.png"
-dest_files=["res://.godot/imported/background_goth_mask.png-4ada581edf4bf60b903c629d1d4d413d.ctex"]
+source_file="res://images/characters/bunny_psycho.png"
+dest_files=["res://.godot/imported/bunny_psycho.png-dfae819866b89a05776709972b6c016f.ctex"]
 
 [params]
 

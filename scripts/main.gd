@@ -1,24 +1,35 @@
+class_name Main
 extends Node2D
 
 enum Level {
 	# ui
 	MAIN_MENU,
 	# areas
-	START,
+	Clearing666,
 }
 
-@onready var level_to_scene = {
+@onready var levelToScene = {
 	Level.MAIN_MENU: $MainMenu,
-	Level.START: $Start,
+	Level.Clearing666: $Clearing666,
 }
 
-# Called when the node enters the scene tree for the first time.
+var levelScene
+
 func _ready() -> void:
-	pass
+	change_scene(Main.Level.MAIN_MENU)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-	
-func 
+func change_scene(level: Main.Level):
+	var levelScene = levelToScene[level]
+	if not has_child(levelScene):
+		add_child.call_deferred(levelScene)
+	for scene in levelToScene:
+		if scene == level or not has_child(levelToScene[scene]):
+			continue
+		remove_child(levelToScene[scene])
+		
+		
+func has_child(node: Node):
+	for child in get_children():
+		if child == node:
+			return true
+	return false

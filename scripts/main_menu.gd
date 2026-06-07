@@ -1,4 +1,6 @@
-extends Node2D
+extends Level
+
+@onready var main = get_tree().get_nodes_in_group("main")[0]
 
 @onready var hoverSound = $HoverSound
 @onready var continueButton = $CanvasLayer/MarginContainer/VBoxContainer/Continue
@@ -6,16 +8,10 @@ extends Node2D
 @onready var settingsButton = $CanvasLayer/MarginContainer/VBoxContainer/Settings
 @onready var exitButton = $CanvasLayer/MarginContainer/VBoxContainer/Exit
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
+func _on_new_game_gui_input(event: InputEvent) -> void:
+	if (event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT):
+		main.change_scene(main.Level.Clearing666)
+	
 func _on_exit_gui_input(event: InputEvent) -> void:
 	if (event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT):
 		get_tree().quit()

@@ -1,7 +1,5 @@
-class_name Level
-extends Node2D
+extends Level
 
-@export var background_music = load("res://music/dark_orchestra.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
