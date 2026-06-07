@@ -9,7 +9,7 @@
 script = ExtResource("1_o5qli")
 
 [node name="GhostDeer" parent="." unique_id=155461262 instance=ExtResource("2_jyhfs")]
-position = Vector2(22, 66)
+position = Vector2(1231, 830)
 
 [node name="MainMenu" parent="." unique_id=1452238829 instance=ExtResource("2_0wfyh")]
 
