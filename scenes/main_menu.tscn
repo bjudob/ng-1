@@ -10,6 +10,7 @@
 
 [node name="MainMenu" type="Node2D" unique_id=1452238829]
 script = ExtResource("1_8ln24")
+isUI = true
 
 [node name="HoverSound" type="AudioStreamPlayer" parent="." unique_id=1563468335]
 stream = ExtResource("3_tbmy8")

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b17ibnbtxv1ww"]
+
+[ext_resource type="Texture2D" uid="uid://cerft8ibev0lc" path="res://images/icons/icon_menu_deer.png" id="1_yubou"]
+
+[node name="GameUI" type="Node2D" unique_id=2033357070]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1196759709]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1310101403]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="MenuIcon" type="TextureRect" parent="CanvasLayer/MarginContainer" unique_id=1718833133]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("1_yubou")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer" unique_id=1538983516]
+layout_mode = 2
