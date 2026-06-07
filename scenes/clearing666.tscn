@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://ncl3m6vy21qn" path="res://images/backgrounds/clearing_penta.png" id="1_1va06"]
 [ext_resource type="Script" uid="uid://cn5p8ux2wjnk4" path="res://scripts/clearing_666.gd" id="1_61vdq"]
+[ext_resource type="Texture2D" uid="uid://frk2f48rhw7" path="res://images/characters/deer_dead.png" id="3_0yhhp"]
+[ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="4_bkb37"]
 
 [node name="Clearing666" type="Node2D" unique_id=1549510716]
 script = ExtResource("1_61vdq")
@@ -10,3 +12,17 @@ script = ExtResource("1_61vdq")
 position = Vector2(1299, 803)
 scale = Vector2(2.3, 2.3)
 texture = ExtResource("1_1va06")
+
+[node name="DeerDead" type="Sprite2D" parent="." unique_id=808882954]
+z_index = 2
+position = Vector2(1330, 1194)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_0yhhp")
+
+[node name="Blood" type="Sprite2D" parent="." unique_id=771321388]
+modulate = Color(0.12156863, 0.25490198, 1, 1)
+z_index = 1
+position = Vector2(1299.9998, 1275)
+rotation = -0.32463124
+skew = -0.94596845
+texture = ExtResource("4_bkb37")

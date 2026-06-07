@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0lbed5hhr8y1"
-path="res://.godot/imported/button_menu.png-da03d083f77a714c704bd7fd86555e86.ctex"
+uid="uid://frk2f48rhw7"
+path="res://.godot/imported/deer_dead.png-d3a51566c4219c90060822909566a232.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/buttons_menu/button_menu.png"
-dest_files=["res://.godot/imported/button_menu.png-da03d083f77a714c704bd7fd86555e86.ctex"]
+source_file="res://images/characters/deer_dead.png"
+dest_files=["res://.godot/imported/deer_dead.png-d3a51566c4219c90060822909566a232.ctex"]
 
 [params]
 
