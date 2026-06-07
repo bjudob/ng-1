@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cnf3ofhydgnbn"]
 
 [ext_resource type="Script" uid="uid://bmpotlx77n2p6" path="res://scripts/main_menu.gd" id="1_8ln24"]
-[ext_resource type="AudioStream" uid="uid://uefwmone33mp" path="res://music/dark_orchestra.mp3" id="2_oa1go"]
 [ext_resource type="Texture2D" uid="uid://c4k1v0rvfm8tl" path="res://images/backgrounds/background_goth_mask.png" id="2_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://5833bmbyiogk" path="res://images/buttons_goth/button_continue_goth.png" id="3_rtw2f"]
 [ext_resource type="AudioStream" uid="uid://pb3r8du74xx0" path="res://music/sound_button_2.mp3" id="3_tbmy8"]
@@ -11,11 +10,6 @@
 
 [node name="MainMenu" type="Node2D" unique_id=1452238829]
 script = ExtResource("1_8ln24")
-
-[node name="Music" type="AudioStreamPlayer" parent="." unique_id=953527743]
-stream = ExtResource("2_oa1go")
-autoplay = true
-parameters/looping = true
 
 [node name="HoverSound" type="AudioStreamPlayer" parent="." unique_id=1563468335]
 stream = ExtResource("3_tbmy8")

@@ -4,6 +4,21 @@
 [ext_resource type="Script" uid="uid://cn5p8ux2wjnk4" path="res://scripts/clearing_666.gd" id="1_61vdq"]
 [ext_resource type="Texture2D" uid="uid://frk2f48rhw7" path="res://images/characters/deer_dead.png" id="3_0yhhp"]
 [ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="4_bkb37"]
+[ext_resource type="Texture2D" uid="uid://dxo2pttoct2up" path="res://images/objects/raindrop.png" id="5_wa7u7"]
+[ext_resource type="Shader" uid="uid://c5ut4qetvwssh" path="res://shaders/noise.gdshader" id="6_hm1dy"]
+[ext_resource type="Texture2D" uid="uid://xewat2hdq1ik" path="res://images/characters/bunny_psycho.png" id="7_6hfel"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6hfel"]
+shader = ExtResource("6_hm1dy")
+shader_parameter/scroll = Vector2(0.01, 0.01)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_31td5"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_iagju"]
+width = 3000
+height = 2000
+noise = SubResource("FastNoiseLite_31td5")
+seamless = true
 
 [node name="Clearing666" type="Node2D" unique_id=1549510716]
 script = ExtResource("1_61vdq")
@@ -14,9 +29,10 @@ scale = Vector2(2.3, 2.3)
 texture = ExtResource("1_1va06")
 
 [node name="DeerDead" type="Sprite2D" parent="." unique_id=808882954]
+modulate = Color(0.29411766, 0.32941177, 0.3647059, 1)
 z_index = 2
-position = Vector2(1330, 1194)
-scale = Vector2(0.5, 0.5)
+position = Vector2(1327, 1231)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_0yhhp")
 
 [node name="Blood" type="Sprite2D" parent="." unique_id=771321388]
@@ -24,5 +40,29 @@ modulate = Color(0.12156863, 0.25490198, 1, 1)
 z_index = 1
 position = Vector2(1299.9998, 1275)
 rotation = -0.32463124
+scale = Vector2(0.7, 0.7)
 skew = -0.94596845
 texture = ExtResource("4_bkb37")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=419135998]
+modulate = Color(0.45490196, 0.21568628, 0.21176471, 1)
+position = Vector2(1287, -3)
+amount = 2000
+texture = ExtResource("5_wa7u7")
+lifetime = 10.0
+emission_shape = 3
+emission_rect_extents = Vector2(2500, 1)
+scale_amount_min = 0.1
+scale_amount_max = 0.3
+hue_variation_max = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829905678]
+material = SubResource("ShaderMaterial_6hfel")
+position = Vector2(1404, 836)
+texture = SubResource("NoiseTexture2D_iagju")
+
+[node name="BunnyPsycho" type="Sprite2D" parent="." unique_id=323824106]
+modulate = Color(0.4627451, 0.45490196, 0.46666667, 1)
+position = Vector2(1893, 1217)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("7_6hfel")
