@@ -1,7 +1,20 @@
 [gd_scene format=3 uid="uid://dntfya56g5fmx"]
 
 [ext_resource type="Script" uid="uid://mwepkcklhins" path="res://scripts/ghost_deer.gd" id="1_l54n0"]
-[ext_resource type="Texture2D" uid="uid://wjqiawx14srq" path="res://images/characters/ghost_deer.png" id="2_klo26"]
+[ext_resource type="Shader" uid="uid://dajck5rvonk5r" path="res://shaders/ghost_deer.gdshader" id="2_60f5t"]
+[ext_resource type="Texture2D" uid="uid://brgpg668rj55u" path="res://images/characters/deer_ghost_3.png" id="3_60f5t"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_60f5t"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o577x"]
+shader = ExtResource("2_60f5t")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_60f5t")
+shader_parameter/hover_speed = 2.50000011549012
+shader_parameter/hover_amount = 40.0000019
+shader_parameter/speed = 0.50000002049012
+shader_parameter/intensity = 0.30000001099011997
+shader_parameter/distortion_strength = 0.010000000475
+shader_parameter/ghost_color = Color(0, 0.8, 1, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_klo26"]
 size = Vector2(193, 75)
@@ -11,8 +24,9 @@ script = ExtResource("1_l54n0")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1230738180]
 z_index = 99
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_klo26")
+material = SubResource("ShaderMaterial_o577x")
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_60f5t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=244355985]
 position = Vector2(66.5, 113.5)

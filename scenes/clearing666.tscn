@@ -6,11 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="4_bkb37"]
 [ext_resource type="Texture2D" uid="uid://dxo2pttoct2up" path="res://images/objects/raindrop.png" id="5_wa7u7"]
 [ext_resource type="Shader" uid="uid://c5ut4qetvwssh" path="res://shaders/noise.gdshader" id="6_hm1dy"]
-[ext_resource type="Texture2D" uid="uid://xewat2hdq1ik" path="res://images/characters/bunny_psycho.png" id="7_6hfel"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6hfel"]
 shader = ExtResource("6_hm1dy")
 shader_parameter/scroll = Vector2(0.01, 0.01)
+shader_parameter/intensity = 0.15
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_31td5"]
 
@@ -56,13 +56,7 @@ scale_amount_min = 0.1
 scale_amount_max = 0.3
 hue_variation_max = 1.0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829905678]
+[node name="Fog" type="Sprite2D" parent="." unique_id=829905678]
 material = SubResource("ShaderMaterial_6hfel")
 position = Vector2(1404, 836)
 texture = SubResource("NoiseTexture2D_iagju")
-
-[node name="BunnyPsycho" type="Sprite2D" parent="." unique_id=323824106]
-modulate = Color(0.4627451, 0.45490196, 0.46666667, 1)
-position = Vector2(1893, 1217)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("7_6hfel")
