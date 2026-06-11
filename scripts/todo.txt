@@ -1,0 +1,5 @@
+- 3 layer parallax
+- menu on esc
+- game ui, inventory
+- add characters
+- basic dialog

@@ -55,6 +55,8 @@
 [ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="51_kxj1l"]
 [ext_resource type="Texture2D" uid="uid://frk2f48rhw7" path="res://images/characters/deer_dead.png" id="52_ype5e"]
 [ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="53_ufw7u"]
+[ext_resource type="Texture2D" uid="uid://b0kvvko7timdh" path="res://images/characters/bunny_friendly.png" id="56_w5y4v"]
+[ext_resource type="Texture2D" uid="uid://d4780gb1hwgu" path="res://images/characters/lion.png" id="57_v7gfb"]
 
 [node name="Clearing2" type="Node2D" unique_id=1941419652]
 modulate = Color(0.6862745, 0.6666667, 0.67058825, 1)
@@ -69,9 +71,11 @@ position = Vector2(1439, 1095)
 [node name="Part1" type="Node2D" parent="." unique_id=108292558]
 
 [node name="Parallax2D" type="Parallax2D" parent="Part1" unique_id=1125397073]
-scroll_scale = Vector2(0.8, 0.8)
+scroll_scale = Vector2(0.7, 0.7)
 
 [node name="Background" type="Node2D" parent="Part1/Parallax2D" unique_id=1202306996]
+z_index = -4
+position = Vector2(-7, 57)
 
 [node name="BgTree1" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1478025356]
 position = Vector2(2013, 823)
@@ -1497,13 +1501,28 @@ texture = ExtResource("32_6fknd")
 
 [node name="BgColorDark2" type="Sprite2D" parent="." unique_id=1240989506]
 modulate = Color(0.3019608, 1, 1, 1)
-z_index = -4
+z_index = -99
 position = Vector2(372, 500)
 scale = Vector2(100, 100)
 texture = ExtResource("1_gmxja")
 
 [node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("50_pdm7m")]
+position = Vector2(2567, 11)
+amount = 5000
+emission_rect_extents = Vector2(5000, 1)
 
 [node name="Fog" parent="." unique_id=995094908 instance=ExtResource("51_kxj1l")]
 z_index = 8
-position = Vector2(1199, 699)
+position = Vector2(2617, 806)
+scale = Vector2(2, 1)
+
+[node name="BunnyFriendly" type="Sprite2D" parent="." unique_id=1508910966]
+position = Vector2(3828.0002, 1024)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("56_w5y4v")
+flip_h = true
+
+[node name="Lion" type="Sprite2D" parent="." unique_id=103521724]
+position = Vector2(4038, 1051)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("57_v7gfb")
