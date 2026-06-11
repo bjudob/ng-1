@@ -3,3 +3,5 @@
 - game ui, inventory
 - add characters
 - basic dialog
+- outline shader from rk3
+- dialog sound

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bmjb16qx44s4l" path="res://images/fantasy_forest/bg_color_dark2.png" id="1_gmxja"]
 [ext_resource type="Texture2D" uid="uid://cvklpnm4ibpdd" path="res://images/fantasy_forest/ground1.png" id="1_iq2dx"]
 [ext_resource type="Script" uid="uid://hih5l6oclw7c" path="res://scripts/camera.gd" id="1_nc68e"]
+[ext_resource type="Script" uid="uid://ceknimb7o3135" path="res://scenes/map.gd" id="1_v7gfb"]
 [ext_resource type="Texture2D" uid="uid://dm7udv3lesxcq" path="res://images/fantasy_forest/ground2.png" id="2_kr0ld"]
 [ext_resource type="PackedScene" uid="uid://dntfya56g5fmx" path="res://scenes/ghost_deer.tscn" id="2_r2y85"]
 [ext_resource type="Texture2D" uid="uid://bqqfg1emcwlme" path="res://images/fantasy_forest/ground3.png" id="3_3o7c2"]
@@ -57,9 +58,14 @@
 [ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="53_ufw7u"]
 [ext_resource type="Texture2D" uid="uid://b0kvvko7timdh" path="res://images/characters/bunny_friendly.png" id="56_w5y4v"]
 [ext_resource type="Texture2D" uid="uid://d4780gb1hwgu" path="res://images/characters/lion.png" id="57_v7gfb"]
+[ext_resource type="Script" uid="uid://inehv464la5x" path="res://scenes/bunny_friendly.gd" id="58_icjpl"]
 
-[node name="Clearing2" type="Node2D" unique_id=1941419652]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icjpl"]
+size = Vector2(2776.6665, 1200)
+
+[node name="Map" type="Node2D" unique_id=1941419652]
 modulate = Color(0.6862745, 0.6666667, 0.67058825, 1)
+script = ExtResource("1_v7gfb")
 
 [node name="Camera" type="Camera2D" parent="." unique_id=1254370210]
 anchor_mode = 0
@@ -1521,8 +1527,17 @@ position = Vector2(3828.0002, 1024)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("56_w5y4v")
 flip_h = true
+script = ExtResource("58_icjpl")
+
+[node name="Area2D" type="Area2D" parent="BunnyFriendly" unique_id=34434091]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BunnyFriendly/Area2D" unique_id=1122344673]
+position = Vector2(251.66504, 0)
+shape = SubResource("RectangleShape2D_icjpl")
 
 [node name="Lion" type="Sprite2D" parent="." unique_id=103521724]
 position = Vector2(4038, 1051)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("57_v7gfb")
+
+[connection signal="body_entered" from="BunnyFriendly/Area2D" to="BunnyFriendly" method="_on_area_2d_body_entered"]

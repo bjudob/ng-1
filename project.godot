@@ -21,13 +21,21 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
-layout/style_directory={}
+directories/dch_directory={
+"bunny": "res://dialogic/bunny.dch",
+"lion": "res://dialogic/lion.dch"
+}
+directories/dtl_directory={
+"bunny_lion_original": "res://images/characters/bunny_lion_original.dtl"
+}
+layout/style_directory={
+"": "res://dialogic/styl.tres",
+"styl": "res://dialogic/styl.tres"
+}
 variables={}
 glossary/default_case_sensitive=true
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://dialogic/styl.tres"]
+layout/default_style="res://dialogic/styl.tres"
 
 [display]
 
