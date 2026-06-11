@@ -68,139 +68,142 @@ position = Vector2(1439, 1095)
 
 [node name="Part1" type="Node2D" parent="." unique_id=108292558]
 
-[node name="Background" type="Node2D" parent="Part1" unique_id=1202306996]
+[node name="Parallax2D" type="Parallax2D" parent="Part1" unique_id=1125397073]
+scroll_scale = Vector2(0.8, 0.8)
 
-[node name="BgTree1" type="Sprite2D" parent="Part1/Background" unique_id=1478025356]
+[node name="Background" type="Node2D" parent="Part1/Parallax2D" unique_id=1202306996]
+
+[node name="BgTree1" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1478025356]
 position = Vector2(2013, 823)
 texture = ExtResource("33_vu0kb")
 
-[node name="BgTree4" type="Sprite2D" parent="Part1/Background" unique_id=604539662]
+[node name="BgTree4" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=604539662]
 position = Vector2(2383, 704)
 texture = ExtResource("34_1fpg6")
 
-[node name="BgTop2" type="Sprite2D" parent="Part1/Background" unique_id=959845288]
+[node name="BgTop2" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=959845288]
 position = Vector2(2011, 576)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop3" type="Sprite2D" parent="Part1/Background" unique_id=1917228171]
+[node name="BgTop3" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1917228171]
 position = Vector2(2340, 445)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTree7" type="Sprite2D" parent="Part1/Background" unique_id=790591923]
+[node name="BgTree7" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=790591923]
 position = Vector2(1537, 704)
 texture = ExtResource("6_qa20e")
 
-[node name="BgTree9" type="Sprite2D" parent="Part1/Background" unique_id=1894606444]
+[node name="BgTree9" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1894606444]
 position = Vector2(424, 631.5)
 texture = ExtResource("7_tiu1r")
 
-[node name="BgTree8" type="Sprite2D" parent="Part1/Background" unique_id=2088875187]
+[node name="BgTree8" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=2088875187]
 position = Vector2(276, 670.5)
 texture = ExtResource("6_qa20e")
 
-[node name="BgTop6" type="Sprite2D" parent="Part1/Background" unique_id=99181230]
+[node name="BgTop6" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=99181230]
 position = Vector2(143, 429)
 texture = ExtResource("8_rw1gd")
 
-[node name="BgTop5" type="Sprite2D" parent="Part1/Background" unique_id=1399303532]
+[node name="BgTop5" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1399303532]
 position = Vector2(410, 406)
 texture = ExtResource("9_d2f02")
 
-[node name="BgTop4" type="Sprite2D" parent="Part1/Background" unique_id=1459950003]
+[node name="BgTop4" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1459950003]
 position = Vector2(1691, 493)
 texture = ExtResource("10_tjjws")
 
-[node name="BgTop7" type="Sprite2D" parent="Part1/Background" unique_id=977561898]
+[node name="BgTop7" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=977561898]
 position = Vector2(1385, 452)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTree2" type="Sprite2D" parent="Part1/Background" unique_id=93996612]
+[node name="BgTree2" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=93996612]
 position = Vector2(1840, 669)
 texture = ExtResource("33_vu0kb")
 
-[node name="BgTree3" type="Sprite2D" parent="Part1/Background" unique_id=2023323329]
+[node name="BgTree3" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=2023323329]
 position = Vector2(1763, 679)
 texture = ExtResource("33_vu0kb")
 
-[node name="BgTop8" type="Sprite2D" parent="Part1/Background" unique_id=333627588]
+[node name="BgTop8" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=333627588]
 position = Vector2(78, 99)
 texture = ExtResource("8_rw1gd")
 
-[node name="BgTop9" type="Sprite2D" parent="Part1/Background" unique_id=786433715]
+[node name="BgTop9" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=786433715]
 position = Vector2(245, 65)
 texture = ExtResource("8_rw1gd")
 
-[node name="BgTop10" type="Sprite2D" parent="Part1/Background" unique_id=1771524657]
+[node name="BgTop10" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1771524657]
 position = Vector2(524, 77)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTop11" type="Sprite2D" parent="Part1/Background" unique_id=1071693542]
+[node name="BgTop11" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1071693542]
 position = Vector2(743, 47)
 texture = ExtResource("10_tjjws")
 
-[node name="BgTop12" type="Sprite2D" parent="Part1/Background" unique_id=870469247]
+[node name="BgTop12" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=870469247]
 position = Vector2(983, 74)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTop13" type="Sprite2D" parent="Part1/Background" unique_id=596736552]
+[node name="BgTop13" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=596736552]
 position = Vector2(1259, 65)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop1" type="Sprite2D" parent="Part1/Background" unique_id=1751707793]
+[node name="BgTop1" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1751707793]
 position = Vector2(1469, 71)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop14" type="Sprite2D" parent="Part1/Background" unique_id=1667905133]
+[node name="BgTop14" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1667905133]
 position = Vector2(1697, 90)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop15" type="Sprite2D" parent="Part1/Background" unique_id=514853085]
+[node name="BgTop15" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=514853085]
 position = Vector2(1910, 62)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTop16" type="Sprite2D" parent="Part1/Background" unique_id=158281100]
+[node name="BgTop16" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=158281100]
 position = Vector2(2165, 59)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop17" type="Sprite2D" parent="Part1/Background" unique_id=1116606011]
+[node name="BgTop17" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1116606011]
 position = Vector2(2365, 74)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop18" type="Sprite2D" parent="Part1/Background" unique_id=257886422]
+[node name="BgTop18" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=257886422]
 position = Vector2(2469, 77)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop19" type="Sprite2D" parent="Part1/Background" unique_id=1831775075]
+[node name="BgTop19" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1831775075]
 position = Vector2(836, 178)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop20" type="Sprite2D" parent="Part1/Background" unique_id=659183144]
+[node name="BgTop20" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=659183144]
 position = Vector2(960, 249)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop21" type="Sprite2D" parent="Part1/Background" unique_id=990449812]
+[node name="BgTop21" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=990449812]
 position = Vector2(976, 222)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop22" type="Sprite2D" parent="Part1/Background" unique_id=1892451400]
+[node name="BgTop22" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1892451400]
 position = Vector2(1192, 196)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop23" type="Sprite2D" parent="Part1/Background" unique_id=939104634]
+[node name="BgTop23" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=939104634]
 position = Vector2(708, 209)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTree5" type="Sprite2D" parent="Part1/Background" unique_id=789477066]
+[node name="BgTree5" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=789477066]
 position = Vector2(629, 610)
 scale = Vector2(2, 2)
 texture = ExtResource("12_rw1gd")
 
-[node name="BgTree6" type="Sprite2D" parent="Part1/Background" unique_id=1388999524]
+[node name="BgTree6" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1388999524]
 position = Vector2(2020, 416)
 scale = Vector2(2, 2)
 texture = ExtResource("12_rw1gd")
 
-[node name="BgTree10" type="Sprite2D" parent="Part1/Background" unique_id=1237750167]
+[node name="BgTree10" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1237750167]
 position = Vector2(1148, 613)
 scale = Vector2(2, 2)
 texture = ExtResource("34_1fpg6")
