@@ -4,21 +4,9 @@
 [ext_resource type="Script" uid="uid://cn5p8ux2wjnk4" path="res://scripts/clearing_666.gd" id="1_61vdq"]
 [ext_resource type="Texture2D" uid="uid://frk2f48rhw7" path="res://images/characters/deer_dead.png" id="3_0yhhp"]
 [ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="4_bkb37"]
-[ext_resource type="Texture2D" uid="uid://dxo2pttoct2up" path="res://images/objects/raindrop.png" id="5_wa7u7"]
-[ext_resource type="Shader" uid="uid://c5ut4qetvwssh" path="res://shaders/noise.gdshader" id="6_hm1dy"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6hfel"]
-shader = ExtResource("6_hm1dy")
-shader_parameter/scroll = Vector2(0.01, 0.01)
-shader_parameter/intensity = 0.15
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_31td5"]
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_iagju"]
-width = 3000
-height = 2000
-noise = SubResource("FastNoiseLite_31td5")
-seamless = true
+[ext_resource type="PackedScene" uid="uid://d3rul46ijlmgl" path="res://scenes/raining_blood.tscn" id="5_6hfel"]
+[ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="6_6hfel"]
+[ext_resource type="Texture2D" uid="uid://b31rix53apkqt" path="res://images/objects/rock.png" id="7_6hfel"]
 
 [node name="Clearing666" type="Node2D" unique_id=1549510716]
 script = ExtResource("1_61vdq")
@@ -44,19 +32,14 @@ scale = Vector2(0.7, 0.7)
 skew = -0.94596845
 texture = ExtResource("4_bkb37")
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=419135998]
-modulate = Color(0.45490196, 0.21568628, 0.21176471, 1)
+[node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("5_6hfel")]
 position = Vector2(1287, -3)
-amount = 2000
-texture = ExtResource("5_wa7u7")
-lifetime = 10.0
-emission_shape = 3
-emission_rect_extents = Vector2(2500, 1)
-scale_amount_min = 0.1
-scale_amount_max = 0.3
-hue_variation_max = 1.0
 
-[node name="Fog" type="Sprite2D" parent="." unique_id=829905678]
-material = SubResource("ShaderMaterial_6hfel")
+[node name="Fog" parent="." unique_id=995094908 instance=ExtResource("6_6hfel")]
 position = Vector2(1404, 836)
-texture = SubResource("NoiseTexture2D_iagju")
+
+[node name="Rock" type="Sprite2D" parent="." unique_id=840895402]
+modulate = Color(0.29411766, 0.30980393, 0.32941177, 1)
+position = Vector2(1947, 1136)
+scale = Vector2(0.20458342, 0.2431251)
+texture = ExtResource("7_6hfel")

@@ -10,10 +10,8 @@ enum Level {
 
 @onready var levelToScene = {
 	Level.MAIN_MENU: $MainMenu,
-	Level.Clearing666: $Clearing666,
+	Level.Clearing666: $Clearing2,
 }
-
-var levelScene
 
 func _ready() -> void:
 	change_scene(Main.Level.MAIN_MENU)

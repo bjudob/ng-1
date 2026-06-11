@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cnf3ofhydgnbn" path="res://scenes/main_menu.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dntfya56g5fmx" path="res://scenes/ghost_deer.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://ccjejpkou3m56" path="res://scenes/clearing666.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://cum6eg57d701w" path="res://scenes/clearing.tscn" id="4_tefeu"]
 [ext_resource type="AudioStream" uid="uid://uefwmone33mp" path="res://music/dark_orchestra.mp3" id="5_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://b17ibnbtxv1ww" path="res://scenes/game_ui.tscn" id="6_tefeu"]
+[ext_resource type="PackedScene" uid="uid://0i2d3cslpgkp" path="res://scenes/clearing_2.tscn" id="7_o6xl0"]
 
 [node name="Main" type="Node2D" unique_id=530481256 groups=["main"]]
 script = ExtResource("1_o5qli")
@@ -15,10 +16,14 @@ position = Vector2(1231, 830)
 
 [node name="MainMenu" parent="." unique_id=1452238829 instance=ExtResource("2_0wfyh")]
 
+[node name="Clearing" parent="." unique_id=1955722297 instance=ExtResource("4_tefeu")]
+visible = false
+
 [node name="Clearing666" parent="." unique_id=1549510716 instance=ExtResource("3_sugp2")]
+visible = false
+
+[node name="Clearing2" parent="." unique_id=1941419652 instance=ExtResource("7_o6xl0")]
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=2096236393]
 stream = ExtResource("5_tbgi4")
 autoplay = true
-
-[node name="GameUI" parent="." unique_id=2033357070 instance=ExtResource("6_tefeu")]
