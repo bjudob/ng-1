@@ -2,7 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://bmjb16qx44s4l" path="res://images/fantasy_forest/bg_color_dark2.png" id="1_gmxja"]
 [ext_resource type="Texture2D" uid="uid://cvklpnm4ibpdd" path="res://images/fantasy_forest/ground1.png" id="1_iq2dx"]
+[ext_resource type="Script" uid="uid://hih5l6oclw7c" path="res://scripts/camera.gd" id="1_nc68e"]
 [ext_resource type="Texture2D" uid="uid://dm7udv3lesxcq" path="res://images/fantasy_forest/ground2.png" id="2_kr0ld"]
+[ext_resource type="PackedScene" uid="uid://dntfya56g5fmx" path="res://scenes/ghost_deer.tscn" id="2_r2y85"]
 [ext_resource type="Texture2D" uid="uid://bqqfg1emcwlme" path="res://images/fantasy_forest/ground3.png" id="3_3o7c2"]
 [ext_resource type="Texture2D" uid="uid://claf1lkuc8y1q" path="res://images/fantasy_forest/ground4.png" id="4_b38ju"]
 [ext_resource type="Texture2D" uid="uid://dhpltb8pxeadl" path="res://images/fantasy_forest/bg_top2.png" id="4_gi0w5"]
@@ -56,6 +58,13 @@
 
 [node name="Clearing2" type="Node2D" unique_id=1941419652]
 modulate = Color(0.6862745, 0.6666667, 0.67058825, 1)
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1254370210]
+anchor_mode = 0
+script = ExtResource("1_nc68e")
+
+[node name="GhostDeer" parent="." unique_id=155461262 instance=ExtResource("2_r2y85")]
+position = Vector2(1439, 1095)
 
 [node name="Part1" type="Node2D" parent="." unique_id=108292558]
 

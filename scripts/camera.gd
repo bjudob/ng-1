@@ -1,7 +1,8 @@
 extends Camera2D
 
 @onready var ghostDeer = $"../GhostDeer"
-const SPEED = 0.5
+const SPEED = 0.6
+const DISTANCE_TO_TRIGGER_MOVE = 500
 
 var width
 var height
@@ -18,6 +19,7 @@ func _process(delta: float) -> void:
 	var target = ghostDeer.position
 	var fixedOnDeer = target - Vector2(width/2, height/2)
 	var direction = (fixedOnDeer - position).normalized()
-	position = position + direction * SPEED
+	if abs(position.x - fixedOnDeer.x) > DISTANCE_TO_TRIGGER_MOVE:
+		position.x = position.x + direction.x * SPEED
 	
 	
