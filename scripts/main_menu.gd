@@ -10,7 +10,7 @@ extends Level
 
 func _on_new_game_gui_input(event: InputEvent) -> void:
 	if (event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT):
-		main.change_scene(main.Level.Clearing666)
+		main.change_scene(main.Level.Map)
 	
 func _on_exit_gui_input(event: InputEvent) -> void:
 	if (event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT):

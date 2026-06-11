@@ -5,12 +5,12 @@ enum Level {
 	# ui
 	MAIN_MENU,
 	# areas
-	Clearing666,
+	Map,
 }
 
 @onready var levelToScene = {
 	Level.MAIN_MENU: $MainMenu,
-	Level.Clearing666: $Clearing2,
+	Level.Map: $Map,
 }
 
 func _ready() -> void:
