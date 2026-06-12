@@ -27,12 +27,16 @@
 [ext_resource type="Texture2D" uid="uid://lv1s2m7xk54q" path="res://images/fantasy_forest/mushroom1.png" id="13_w4lpt"]
 [ext_resource type="Texture2D" uid="uid://c2g2vlhc24anm" path="res://images/fantasy_forest/pillar1.png" id="14_of5ei"]
 [ext_resource type="Texture2D" uid="uid://bntqukwuvewu5" path="res://images/fantasy_forest/mushroom2.png" id="14_t62cj"]
+[ext_resource type="Texture2D" uid="uid://b8rnwh7kkqhxn" path="res://images/fantasy_forest/bg_tree5.png" id="15_o4st3"]
 [ext_resource type="Texture2D" uid="uid://did8gb621130o" path="res://images/fantasy_forest/mushroom3.png" id="15_s4vgh"]
 [ext_resource type="Texture2D" uid="uid://b576n5vcjuom1" path="res://images/fantasy_forest/stone4.png" id="15_vu0kb"]
 [ext_resource type="Texture2D" uid="uid://bb31xgtw6sq4x" path="res://images/fantasy_forest/stone5.png" id="16_1fpg6"]
+[ext_resource type="Texture2D" uid="uid://86xy7elas4dq" path="res://images/fantasy_forest/bg_tree3.png" id="16_f4upa"]
 [ext_resource type="Texture2D" uid="uid://14cts5o5wgfn" path="res://images/fantasy_forest/m_pillar3.png" id="16_jamoa"]
 [ext_resource type="Texture2D" uid="uid://dcgvtguny4lw3" path="res://images/fantasy_forest/m_pillar2.png" id="17_6i3ag"]
+[ext_resource type="Texture2D" uid="uid://3mbaeomttbhc" path="res://images/fantasy_forest/bg_tree8.png" id="17_fvbyp"]
 [ext_resource type="Texture2D" uid="uid://cv2x8opdsmc5m" path="res://images/fantasy_forest/ruin3.png" id="17_t3f10"]
+[ext_resource type="Texture2D" uid="uid://xmtmonchq26c" path="res://images/fantasy_forest/bg_top7.png" id="18_braog"]
 [ext_resource type="Texture2D" uid="uid://dj8pp5w28dqoa" path="res://images/fantasy_forest/m_pillar1.png" id="18_c3crp"]
 [ext_resource type="Texture2D" uid="uid://dg6vqb7wex4ur" path="res://images/fantasy_forest/top4.png" id="18_u3r2f"]
 [ext_resource type="Texture2D" uid="uid://y2m7lxhp1ygn" path="res://images/fantasy_forest/top2.png" id="19_gi0w5"]
@@ -59,6 +63,9 @@
 [ext_resource type="Texture2D" uid="uid://b0kvvko7timdh" path="res://images/characters/bunny_friendly.png" id="56_w5y4v"]
 [ext_resource type="Texture2D" uid="uid://d4780gb1hwgu" path="res://images/characters/lion.png" id="57_v7gfb"]
 [ext_resource type="Script" uid="uid://inehv464la5x" path="res://scenes/bunny_friendly.gd" id="58_icjpl"]
+[ext_resource type="Texture2D" uid="uid://dmu6yvbm7ll51" path="res://images/fantasy_forest/top3.png" id="59_icjpl"]
+[ext_resource type="Texture2D" uid="uid://cjaya556qjvik" path="res://images/fantasy_forest/ground7.png" id="64_14ag1"]
+[ext_resource type="Texture2D" uid="uid://bsqtfuvywsmm7" path="res://images/fantasy_forest/top1.png" id="66_fvbyp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_icjpl"]
 size = Vector2(2776.6665, 1200)
@@ -74,717 +81,1525 @@ script = ExtResource("1_nc68e")
 [node name="GhostDeer" parent="." unique_id=155461262 instance=ExtResource("2_r2y85")]
 position = Vector2(1439, 1095)
 
-[node name="Part1" type="Node2D" parent="." unique_id=108292558]
+[node name="Forest" type="Node2D" parent="." unique_id=108292558]
 
-[node name="Parallax2D" type="Parallax2D" parent="Part1" unique_id=1125397073]
+[node name="Parallax2D" type="Parallax2D" parent="Forest" unique_id=1125397073]
 scroll_scale = Vector2(0.7, 0.7)
 
-[node name="Background" type="Node2D" parent="Part1/Parallax2D" unique_id=1202306996]
+[node name="Background" type="Node2D" parent="Forest/Parallax2D" unique_id=1202306996]
 z_index = -4
 position = Vector2(-7, 57)
 
-[node name="BgTree1" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1478025356]
+[node name="BgTree1" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1478025356]
 position = Vector2(2013, 823)
 texture = ExtResource("33_vu0kb")
 
-[node name="BgTree4" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=604539662]
+[node name="BgTree4" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=604539662]
 position = Vector2(2383, 704)
 texture = ExtResource("34_1fpg6")
 
-[node name="BgTop2" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=959845288]
+[node name="BgTop2" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=959845288]
 position = Vector2(2011, 576)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop3" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1917228171]
+[node name="BgTop3" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1917228171]
 position = Vector2(2340, 445)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTree7" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=790591923]
+[node name="BgTree7" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=790591923]
 position = Vector2(1537, 704)
 texture = ExtResource("6_qa20e")
 
-[node name="BgTree9" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1894606444]
+[node name="BgTree9" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1894606444]
 position = Vector2(424, 631.5)
 texture = ExtResource("7_tiu1r")
 
-[node name="BgTree8" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=2088875187]
+[node name="BgTree8" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=2088875187]
 position = Vector2(276, 670.5)
 texture = ExtResource("6_qa20e")
 
-[node name="BgTop6" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=99181230]
+[node name="BgTop6" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=99181230]
 position = Vector2(143, 429)
 texture = ExtResource("8_rw1gd")
 
-[node name="BgTop5" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1399303532]
+[node name="BgTop5" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1399303532]
 position = Vector2(410, 406)
 texture = ExtResource("9_d2f02")
 
-[node name="BgTop4" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1459950003]
+[node name="BgTop4" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1459950003]
 position = Vector2(1691, 493)
 texture = ExtResource("10_tjjws")
 
-[node name="BgTop7" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=977561898]
+[node name="BgTop7" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=977561898]
 position = Vector2(1385, 452)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTree2" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=93996612]
+[node name="BgTree2" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=93996612]
 position = Vector2(1840, 669)
 texture = ExtResource("33_vu0kb")
 
-[node name="BgTree3" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=2023323329]
+[node name="BgTree3" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=2023323329]
 position = Vector2(1763, 679)
 texture = ExtResource("33_vu0kb")
 
-[node name="BgTop8" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=333627588]
+[node name="BgTop8" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=333627588]
 position = Vector2(78, 99)
 texture = ExtResource("8_rw1gd")
 
-[node name="BgTop9" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=786433715]
+[node name="BgTop9" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=786433715]
 position = Vector2(245, 65)
 texture = ExtResource("8_rw1gd")
 
-[node name="BgTop10" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1771524657]
+[node name="BgTop10" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1771524657]
 position = Vector2(524, 77)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTop11" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1071693542]
+[node name="BgTop11" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1071693542]
 position = Vector2(743, 47)
 texture = ExtResource("10_tjjws")
 
-[node name="BgTop12" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=870469247]
+[node name="BgTop12" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=870469247]
 position = Vector2(983, 74)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTop13" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=596736552]
+[node name="BgTop13" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=596736552]
 position = Vector2(1259, 65)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop1" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1751707793]
+[node name="BgTop1" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1751707793]
 position = Vector2(1469, 71)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop14" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1667905133]
+[node name="BgTop14" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1667905133]
 position = Vector2(1697, 90)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop15" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=514853085]
+[node name="BgTop15" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=514853085]
 position = Vector2(1910, 62)
 texture = ExtResource("5_gx4ul")
 
-[node name="BgTop16" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=158281100]
+[node name="BgTop16" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=158281100]
 position = Vector2(2165, 59)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop17" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1116606011]
+[node name="BgTop17" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1116606011]
 position = Vector2(2365, 74)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop18" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=257886422]
+[node name="BgTop18" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=257886422]
 position = Vector2(2469, 77)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop19" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1831775075]
+[node name="BgTop19" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1831775075]
 position = Vector2(836, 178)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop20" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=659183144]
+[node name="BgTop20" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=659183144]
 position = Vector2(960, 249)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop21" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=990449812]
+[node name="BgTop21" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=990449812]
 position = Vector2(976, 222)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTop22" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1892451400]
+[node name="BgTop22" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1892451400]
 position = Vector2(1192, 196)
 texture = ExtResource("4_gi0w5")
 
-[node name="BgTop23" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=939104634]
+[node name="BgTop23" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=939104634]
 position = Vector2(708, 209)
 texture = ExtResource("46_ype5e")
 
-[node name="BgTree5" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=789477066]
+[node name="BgTree5" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=789477066]
 position = Vector2(629, 610)
 scale = Vector2(2, 2)
 texture = ExtResource("12_rw1gd")
 
-[node name="BgTree6" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1388999524]
+[node name="BgTree6" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1388999524]
 position = Vector2(2020, 416)
 scale = Vector2(2, 2)
 texture = ExtResource("12_rw1gd")
 
-[node name="BgTree10" type="Sprite2D" parent="Part1/Parallax2D/Background" unique_id=1237750167]
+[node name="BgTree10" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1237750167]
 position = Vector2(1148, 613)
 scale = Vector2(2, 2)
 texture = ExtResource("34_1fpg6")
 
-[node name="GroundLevel1" type="Node2D" parent="Part1" unique_id=834062314]
+[node name="BgTop24" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1527475212]
+position = Vector2(1669, -27)
+texture = ExtResource("8_rw1gd")
 
-[node name="Ground1" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=1769063797]
+[node name="BgTop25" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=565297063]
+position = Vector2(1380, -38)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop26" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1826201129]
+position = Vector2(1147, -68)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop27" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=232424236]
+position = Vector2(886, -85)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop28" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=580010269]
+position = Vector2(504, -75)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop29" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1253609038]
+position = Vector2(353, -50)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop30" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=665520520]
+position = Vector2(80, -63)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop31" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1705357935]
+position = Vector2(1855, -83)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop32" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=2064835625]
+position = Vector2(2149, -80)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTop33" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1017472256]
+position = Vector2(2455, -85)
+texture = ExtResource("8_rw1gd")
+
+[node name="BgTree11" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1351401620]
+position = Vector2(2983, 453)
+scale = Vector2(3, 3)
+texture = ExtResource("15_o4st3")
+
+[node name="BgTop34" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=331187759]
+position = Vector2(3211, -69)
+scale = Vector2(2, 2)
+texture = ExtResource("5_gx4ul")
+
+[node name="BgTop35" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=991633039]
+position = Vector2(2774, -121)
+rotation = -0.35953784
+scale = Vector2(2, 2)
+texture = ExtResource("5_gx4ul")
+
+[node name="BgTop36" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1566933761]
+position = Vector2(2699, 295)
+texture = ExtResource("4_gi0w5")
+
+[node name="BgTree12" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=455729485]
+position = Vector2(4880, 682)
+texture = ExtResource("12_rw1gd")
+
+[node name="BgTree13" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=822241268]
+position = Vector2(4626, 795)
+texture = ExtResource("16_f4upa")
+
+[node name="BgTop37" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=39946644]
+position = Vector2(4858, 458)
+texture = ExtResource("10_tjjws")
+
+[node name="BgTop38" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=627852850]
+position = Vector2(4601, 616)
+texture = ExtResource("46_ype5e")
+
+[node name="BgTree14" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=1863677322]
+position = Vector2(3452, 704)
+texture = ExtResource("17_fvbyp")
+
+[node name="BgTop39" type="Sprite2D" parent="Forest/Parallax2D/Background" unique_id=855044432]
+position = Vector2(3433, 353)
+texture = ExtResource("18_braog")
+
+[node name="Ground" type="Node2D" parent="Forest" unique_id=134679601]
+
+[node name="GroundLevel1" type="Node2D" parent="Forest/Ground" unique_id=834062314]
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=1769063797]
 position = Vector2(93, 1524)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground2" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=426142969]
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=426142969]
 position = Vector2(282, 1531)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground3" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=120098395]
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=120098395]
 position = Vector2(479, 1538)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground4" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=446854114]
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=446854114]
 position = Vector2(668, 1538)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground5" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=1728769247]
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=1728769247]
 position = Vector2(859, 1543)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground7" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=765115322]
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=765115322]
 position = Vector2(1263, 1546)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground8" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=1812407083]
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=1812407083]
 z_index = -1
 position = Vector2(1452, 1549)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground9" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=898980874]
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=898980874]
 position = Vector2(1643, 1540)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground10" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=587354189]
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=587354189]
 z_index = -1
 position = Vector2(1826, 1543)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground11" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=1961666320]
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=1961666320]
 position = Vector2(1906, 1545)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground12" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=1949652568]
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=1949652568]
 position = Vector2(1991, 1539)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground13" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=924284908]
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=924284908]
 position = Vector2(2171, 1544)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground14" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=386820424]
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=386820424]
 position = Vector2(2345, 1551)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground15" type="Sprite2D" parent="Part1/GroundLevel1" unique_id=227351518]
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground/GroundLevel1" unique_id=227351518]
 position = Vector2(2467, 1551)
 texture = ExtResource("1_iq2dx")
 
-[node name="GroundLevel2" type="Node2D" parent="Part1" unique_id=2069876356]
+[node name="GroundLevel2" type="Node2D" parent="Forest/Ground" unique_id=2069876356]
 
-[node name="Ground6" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=1030786922]
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=1030786922]
 position = Vector2(1060, 1546)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground16" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=1053113210]
+[node name="Ground16" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=1053113210]
 position = Vector2(96, 1405)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground17" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=996341834]
+[node name="Ground17" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=996341834]
 position = Vector2(200, 1414)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground18" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=210600518]
+[node name="Ground18" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=210600518]
 position = Vector2(406, 1419)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground19" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=928357933]
+[node name="Ground19" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=928357933]
 position = Vector2(606, 1429)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground20" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=1719743047]
+[node name="Ground20" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=1719743047]
 position = Vector2(807, 1434)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground21" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=206582126]
+[node name="Ground21" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=206582126]
 z_index = -1
 position = Vector2(980, 1431)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground22" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=903461820]
+[node name="Ground22" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=903461820]
 position = Vector2(1176, 1426)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground23" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=1263643454]
+[node name="Ground23" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=1263643454]
 position = Vector2(1375, 1415)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground24" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=522004479]
+[node name="Ground24" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=522004479]
 position = Vector2(1584, 1415)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground25" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=384127391]
+[node name="Ground25" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=384127391]
 position = Vector2(1788, 1415)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground26" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=1138591376]
+[node name="Ground26" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=1138591376]
 position = Vector2(1966, 1417)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground27" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=2139736166]
+[node name="Ground27" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=2139736166]
 position = Vector2(2097, 1434)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground28" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=329920658]
+[node name="Ground28" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=329920658]
 position = Vector2(2261, 1426)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground29" type="Sprite2D" parent="Part1/GroundLevel2" unique_id=1591236127]
+[node name="Ground29" type="Sprite2D" parent="Forest/Ground/GroundLevel2" unique_id=1591236127]
 position = Vector2(2454, 1420)
 texture = ExtResource("2_kr0ld")
 
-[node name="GroundLevel3" type="Node2D" parent="Part1" unique_id=1723392308]
+[node name="GroundLevel3" type="Node2D" parent="Forest/Ground" unique_id=1723392308]
 position = Vector2(6, -258)
 
-[node name="Ground1" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1117510956]
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1117510956]
 position = Vector2(93, 1524)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground2" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=421807897]
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=421807897]
 position = Vector2(282, 1531)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground3" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1805664816]
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1805664816]
 position = Vector2(479, 1538)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground4" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1337163621]
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1337163621]
 position = Vector2(668, 1538)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground5" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=580428636]
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=580428636]
 position = Vector2(859, 1543)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground7" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1963340184]
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1963340184]
 position = Vector2(1263, 1546)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground8" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1822138449]
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1822138449]
 z_index = -1
 position = Vector2(1452, 1549)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground9" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=618033618]
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=618033618]
 position = Vector2(1643, 1540)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground10" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1973410587]
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1973410587]
 z_index = -1
 position = Vector2(1826, 1543)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground11" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=343429566]
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=343429566]
 position = Vector2(1906, 1545)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground12" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=184873947]
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=184873947]
 position = Vector2(1991, 1539)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground13" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1215497999]
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1215497999]
 position = Vector2(2171, 1544)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground14" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1870024724]
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1870024724]
 position = Vector2(2345, 1551)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground15" type="Sprite2D" parent="Part1/GroundLevel3" unique_id=1491800577]
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground/GroundLevel3" unique_id=1491800577]
 position = Vector2(2467, 1551)
 texture = ExtResource("1_iq2dx")
 
-[node name="GroundLevel4" type="Node2D" parent="Part1" unique_id=99704369]
+[node name="GroundLevel4" type="Node2D" parent="Forest/Ground" unique_id=99704369]
 position = Vector2(18, -257)
 
-[node name="Ground6" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=1535751671]
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=1535751671]
 position = Vector2(1060, 1546)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground16" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=2114977620]
+[node name="Ground16" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=2114977620]
 position = Vector2(96, 1405)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground17" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=939237513]
+[node name="Ground17" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=939237513]
 position = Vector2(200, 1414)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground18" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=1403561369]
+[node name="Ground18" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=1403561369]
 position = Vector2(406, 1419)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground19" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=715600858]
+[node name="Ground19" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=715600858]
 position = Vector2(606, 1429)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground20" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=461774523]
+[node name="Ground20" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=461774523]
 position = Vector2(807, 1434)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground21" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=436306265]
+[node name="Ground21" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=436306265]
 z_index = -1
 position = Vector2(980, 1431)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground22" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=1751458111]
+[node name="Ground22" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=1751458111]
 position = Vector2(1176, 1426)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground23" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=1023249917]
+[node name="Ground23" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=1023249917]
 position = Vector2(1375, 1415)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground24" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=1445349438]
+[node name="Ground24" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=1445349438]
 position = Vector2(1584, 1415)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground25" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=697762516]
+[node name="Ground25" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=697762516]
 position = Vector2(1788, 1415)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground26" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=144607707]
+[node name="Ground26" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=144607707]
 position = Vector2(1966, 1417)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground27" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=1128894914]
+[node name="Ground27" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=1128894914]
 position = Vector2(2097, 1434)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground28" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=490165080]
+[node name="Ground28" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=490165080]
 position = Vector2(2261, 1426)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground29" type="Sprite2D" parent="Part1/GroundLevel4" unique_id=344295546]
+[node name="Ground29" type="Sprite2D" parent="Forest/Ground/GroundLevel4" unique_id=344295546]
 position = Vector2(2454, 1420)
 texture = ExtResource("2_kr0ld")
 
-[node name="GroundLevel5" type="Node2D" parent="Part1" unique_id=2095106226]
+[node name="GroundLevel5" type="Node2D" parent="Forest/Ground" unique_id=2095106226]
 position = Vector2(29, -504)
 
-[node name="Ground1" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1367076703]
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1367076703]
 position = Vector2(93, 1524)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground2" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=2126566057]
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=2126566057]
 position = Vector2(282, 1531)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground3" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1353547208]
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1353547208]
 position = Vector2(479, 1538)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground4" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1908077918]
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1908077918]
 position = Vector2(668, 1538)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground5" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=729563385]
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=729563385]
 position = Vector2(859, 1543)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground7" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1533754963]
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1533754963]
 position = Vector2(1263, 1546)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground8" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1287548739]
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1287548739]
 z_index = -1
 position = Vector2(1452, 1549)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground9" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=133488679]
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=133488679]
 position = Vector2(1643, 1540)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground10" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=561649649]
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=561649649]
 z_index = -1
 position = Vector2(1826, 1543)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground11" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1811070755]
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1811070755]
 position = Vector2(1906, 1545)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground12" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=105858295]
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=105858295]
 position = Vector2(1991, 1539)
 texture = ExtResource("4_b38ju")
 
-[node name="Ground13" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1989509263]
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1989509263]
 position = Vector2(2171, 1544)
 texture = ExtResource("3_3o7c2")
 
-[node name="Ground14" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=1609833719]
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=1609833719]
 position = Vector2(2345, 1551)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground15" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=968534373]
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=968534373]
 position = Vector2(2467, 1551)
 texture = ExtResource("1_iq2dx")
 
-[node name="Ground6" type="Sprite2D" parent="Part1/GroundLevel5" unique_id=386051486]
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground/GroundLevel5" unique_id=386051486]
 position = Vector2(1063, 1543)
 texture = ExtResource("1_iq2dx")
 
-[node name="AboveGrounds" type="Node2D" parent="Part1" unique_id=1405692130]
+[node name="Top3" type="Sprite2D" parent="Forest/Ground" unique_id=1265460511]
+position = Vector2(2513, 1209)
+texture = ExtResource("59_icjpl")
 
-[node name="Ground2" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=785083092]
+[node name="Ground2" type="Node2D" parent="Forest" unique_id=1367901814]
+position = Vector2(2525, 41)
+rotation = -0.027925268
+
+[node name="GroundLevel1" type="Node2D" parent="Forest/Ground2" unique_id=1466277335]
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=1172561319]
+position = Vector2(93, 1524)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=300770516]
+position = Vector2(282, 1531)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=2090981442]
+position = Vector2(479, 1538)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=1967342498]
+position = Vector2(668, 1538)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=327745306]
+position = Vector2(859, 1543)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=337682932]
+position = Vector2(1263, 1546)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=605044595]
+z_index = -1
+position = Vector2(1452, 1549)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=2101828093]
+position = Vector2(1643, 1540)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=893453880]
+z_index = -1
+position = Vector2(1826, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=52950888]
+position = Vector2(1906, 1545)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=947899892]
+position = Vector2(1991, 1539)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=1185820897]
+position = Vector2(2171, 1544)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=1468543904]
+position = Vector2(2345, 1551)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground2/GroundLevel1" unique_id=36861371]
+position = Vector2(2467, 1551)
+texture = ExtResource("1_iq2dx")
+
+[node name="GroundLevel2" type="Node2D" parent="Forest/Ground2" unique_id=1193868710]
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=942069670]
+position = Vector2(1060, 1546)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground16" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=380734563]
+position = Vector2(96, 1405)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground17" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=792655227]
+position = Vector2(200, 1414)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground18" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=50138711]
+position = Vector2(406, 1419)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground19" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=94074141]
+position = Vector2(606, 1429)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground20" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=583876624]
+position = Vector2(807, 1434)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground21" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=954733672]
+z_index = -1
+position = Vector2(980, 1431)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground22" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=157773380]
+position = Vector2(1176, 1426)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground23" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=691954613]
+position = Vector2(1375, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground24" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=668940399]
+position = Vector2(1584, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground25" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=471487831]
+position = Vector2(1788, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground26" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=629715870]
+position = Vector2(1966, 1417)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground27" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=1307984808]
+position = Vector2(2097, 1434)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground28" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=1807927084]
+position = Vector2(2261, 1426)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground29" type="Sprite2D" parent="Forest/Ground2/GroundLevel2" unique_id=704131209]
+position = Vector2(2454, 1420)
+texture = ExtResource("2_kr0ld")
+
+[node name="GroundLevel3" type="Node2D" parent="Forest/Ground2" unique_id=430894353]
+position = Vector2(6, -258)
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=142785637]
+position = Vector2(93, 1524)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=88795018]
+position = Vector2(282, 1531)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=780254868]
+position = Vector2(479, 1538)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=36986328]
+position = Vector2(668, 1538)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=336953869]
+position = Vector2(859, 1543)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1229860696]
+position = Vector2(1263, 1546)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1347782690]
+z_index = -1
+position = Vector2(1452, 1549)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1314319363]
+position = Vector2(1643, 1540)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1681180231]
+z_index = -1
+position = Vector2(1826, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1425085173]
+position = Vector2(1906, 1545)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1823108377]
+position = Vector2(1991, 1539)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=740798056]
+position = Vector2(2171, 1544)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1826807815]
+position = Vector2(2345, 1551)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground2/GroundLevel3" unique_id=1911533164]
+position = Vector2(2467, 1551)
+texture = ExtResource("1_iq2dx")
+
+[node name="GroundLevel4" type="Node2D" parent="Forest/Ground2" unique_id=474012357]
+position = Vector2(18, -257)
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=430733592]
+position = Vector2(1060, 1546)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground16" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=888598556]
+position = Vector2(96, 1405)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground17" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=1731845146]
+position = Vector2(200, 1414)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground18" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=949384055]
+position = Vector2(406, 1419)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground19" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=613820405]
+position = Vector2(606, 1429)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground20" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=30407180]
+position = Vector2(807, 1434)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground21" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=2146042138]
+z_index = -1
+position = Vector2(980, 1431)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground22" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=2051937811]
+position = Vector2(1176, 1426)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground23" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=173237349]
+position = Vector2(1375, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground24" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=368639752]
+position = Vector2(1584, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground25" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=325983686]
+position = Vector2(1788, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground26" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=2091909219]
+position = Vector2(1966, 1417)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground27" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=751203579]
+position = Vector2(2097, 1434)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground28" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=1188660329]
+position = Vector2(2261, 1426)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground29" type="Sprite2D" parent="Forest/Ground2/GroundLevel4" unique_id=193657910]
+position = Vector2(2454, 1420)
+texture = ExtResource("2_kr0ld")
+
+[node name="GroundLevel5" type="Node2D" parent="Forest/Ground2" unique_id=1941840845]
+position = Vector2(29, -504)
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1977384619]
+position = Vector2(93, 1524)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=280538856]
+position = Vector2(282, 1531)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=406415435]
+position = Vector2(479, 1538)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=880122832]
+position = Vector2(668, 1538)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=802414377]
+position = Vector2(859, 1543)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1463651943]
+position = Vector2(1263, 1546)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1249512963]
+z_index = -1
+position = Vector2(1452, 1549)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=390260406]
+position = Vector2(1643, 1540)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1973432782]
+z_index = -1
+position = Vector2(1826, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=591145052]
+position = Vector2(1906, 1545)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1946188054]
+position = Vector2(1991, 1539)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1415885616]
+position = Vector2(2171, 1544)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1756372556]
+position = Vector2(2345, 1551)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1079706822]
+position = Vector2(2467, 1551)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground2/GroundLevel5" unique_id=1509699910]
+position = Vector2(1063, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground2" unique_id=1131021828]
+position = Vector2(177, 970)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground2" unique_id=1743548491]
+position = Vector2(180.54443, 878.3836)
+rotation = 0.027925268
+texture = ExtResource("6_qqo5w")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground2" unique_id=422579076]
+position = Vector2(297.87842, 939.68365)
+rotation = 0.027925268
+texture = ExtResource("64_14ag1")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground2" unique_id=122424358]
+position = Vector2(332.42383, 920.6408)
+rotation = 0.027925268
+texture = ExtResource("8_8ckmm")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground2" unique_id=1426408450]
+position = Vector2(437.05322, 899.55396)
+rotation = 0.027925268
+texture = ExtResource("8_8ckmm")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground2" unique_id=1531240175]
+position = Vector2(540.8396, 944.4694)
+rotation = 0.027925268
+texture = ExtResource("8_8ckmm")
+
+[node name="Ground3" type="Node2D" parent="Forest" unique_id=1089690464]
+position = Vector2(-2530, -25)
+
+[node name="GroundLevel1" type="Node2D" parent="Forest/Ground3" unique_id=277294302]
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1682309903]
+position = Vector2(93, 1524)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=405566674]
+position = Vector2(282, 1531)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1170798709]
+position = Vector2(479, 1538)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=424561549]
+position = Vector2(668, 1538)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=180444391]
+position = Vector2(859, 1543)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=445794972]
+position = Vector2(1263, 1546)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1668553977]
+z_index = -1
+position = Vector2(1452, 1549)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=736546925]
+position = Vector2(1643, 1540)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1098125400]
+z_index = -1
+position = Vector2(1826, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1280498659]
+position = Vector2(1906, 1545)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1259048190]
+position = Vector2(1991, 1539)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=1575985787]
+position = Vector2(2171, 1544)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=2063923466]
+position = Vector2(2345, 1551)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground3/GroundLevel1" unique_id=39050978]
+position = Vector2(2467, 1551)
+texture = ExtResource("1_iq2dx")
+
+[node name="GroundLevel2" type="Node2D" parent="Forest/Ground3" unique_id=399883837]
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=990555971]
+position = Vector2(1060, 1546)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground16" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1956106183]
+position = Vector2(96, 1405)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground17" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1546388249]
+position = Vector2(200, 1414)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground18" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1860331594]
+position = Vector2(406, 1419)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground19" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1757950838]
+position = Vector2(606, 1429)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground20" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=463533887]
+position = Vector2(807, 1434)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground21" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=747094587]
+z_index = -1
+position = Vector2(980, 1431)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground22" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1718095381]
+position = Vector2(1176, 1426)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground23" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=987557058]
+position = Vector2(1375, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground24" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=548361871]
+position = Vector2(1584, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground25" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=978487293]
+position = Vector2(1788, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground26" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=907916983]
+position = Vector2(1966, 1417)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground27" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1998451319]
+position = Vector2(2097, 1434)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground28" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=1591503727]
+position = Vector2(2261, 1426)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground29" type="Sprite2D" parent="Forest/Ground3/GroundLevel2" unique_id=696644803]
+position = Vector2(2454, 1420)
+texture = ExtResource("2_kr0ld")
+
+[node name="GroundLevel3" type="Node2D" parent="Forest/Ground3" unique_id=737602666]
+position = Vector2(6, -258)
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=13126387]
+position = Vector2(93, 1524)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1152318839]
+position = Vector2(282, 1531)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=237194181]
+position = Vector2(479, 1538)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=643133808]
+position = Vector2(668, 1538)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1640784975]
+position = Vector2(859, 1543)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1337491828]
+position = Vector2(1263, 1546)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1615429749]
+z_index = -1
+position = Vector2(1452, 1549)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=143059672]
+position = Vector2(1643, 1540)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1381649002]
+z_index = -1
+position = Vector2(1826, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1958337897]
+position = Vector2(1906, 1545)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=962411001]
+position = Vector2(1991, 1539)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=610900213]
+position = Vector2(2171, 1544)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=623394410]
+position = Vector2(2345, 1551)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground3/GroundLevel3" unique_id=1221500854]
+position = Vector2(2467, 1551)
+texture = ExtResource("1_iq2dx")
+
+[node name="GroundLevel4" type="Node2D" parent="Forest/Ground3" unique_id=516745471]
+position = Vector2(18, -257)
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=949575220]
+position = Vector2(1060, 1546)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground16" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=50574156]
+position = Vector2(96, 1405)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground17" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1895958834]
+position = Vector2(200, 1414)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground18" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=266191871]
+position = Vector2(406, 1419)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground19" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1195447864]
+position = Vector2(606, 1429)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground20" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=499047897]
+position = Vector2(807, 1434)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground21" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1788356238]
+z_index = -1
+position = Vector2(980, 1431)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground22" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=178224136]
+position = Vector2(1176, 1426)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground23" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1631922828]
+position = Vector2(1375, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground24" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=905411501]
+position = Vector2(1584, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground25" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1322567989]
+position = Vector2(1788, 1415)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground26" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1178949072]
+position = Vector2(1966, 1417)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground27" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=2024596967]
+position = Vector2(2097, 1434)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground28" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1892600059]
+position = Vector2(2261, 1426)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground29" type="Sprite2D" parent="Forest/Ground3/GroundLevel4" unique_id=1786315895]
+position = Vector2(2454, 1420)
+texture = ExtResource("2_kr0ld")
+
+[node name="GroundLevel5" type="Node2D" parent="Forest/Ground3" unique_id=1707554676]
+position = Vector2(29, -504)
+
+[node name="Ground1" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=1670910751]
+position = Vector2(93, 1524)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground2" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=452928821]
+position = Vector2(282, 1531)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground3" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=460205794]
+position = Vector2(479, 1538)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground4" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=598357108]
+position = Vector2(668, 1538)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground5" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=909374487]
+position = Vector2(859, 1543)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground7" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=915740062]
+position = Vector2(1263, 1546)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground8" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=659982746]
+z_index = -1
+position = Vector2(1452, 1549)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground9" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=2007687555]
+position = Vector2(1643, 1540)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground10" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=1202329849]
+z_index = -1
+position = Vector2(1826, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground11" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=839923739]
+position = Vector2(1906, 1545)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground12" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=1588078008]
+position = Vector2(1991, 1539)
+texture = ExtResource("4_b38ju")
+
+[node name="Ground13" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=598524564]
+position = Vector2(2171, 1544)
+texture = ExtResource("3_3o7c2")
+
+[node name="Ground14" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=1678743796]
+position = Vector2(2345, 1551)
+texture = ExtResource("2_kr0ld")
+
+[node name="Ground15" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=101266446]
+position = Vector2(2467, 1551)
+texture = ExtResource("1_iq2dx")
+
+[node name="Ground6" type="Sprite2D" parent="Forest/Ground3/GroundLevel5" unique_id=1445768201]
+position = Vector2(1063, 1543)
+texture = ExtResource("1_iq2dx")
+
+[node name="AboveGrounds" type="Node2D" parent="Forest" unique_id=1405692130]
+
+[node name="Ground2" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=785083092]
 position = Vector2(1064, 1292)
 texture = ExtResource("2_kr0ld")
 
-[node name="Ground5" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1382305670]
+[node name="Ground5" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1382305670]
 position = Vector2(710, 1101)
 texture = ExtResource("5_8jq2n")
 
-[node name="Ground6" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=746973283]
+[node name="Ground6" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=746973283]
 position = Vector2(927, 1274)
 texture = ExtResource("6_qqo5w")
 
-[node name="Ground7" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1019329761]
+[node name="Ground7" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1019329761]
 position = Vector2(510, 1304)
 texture = ExtResource("5_8jq2n")
 
-[node name="Ground8" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1457391946]
+[node name="Ground8" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1457391946]
 position = Vector2(1260, 1324)
 texture = ExtResource("6_qqo5w")
 
-[node name="Ground9" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=711225945]
+[node name="Ground9" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=711225945]
 position = Vector2(2383, 1091)
 texture = ExtResource("7_v338e")
 
-[node name="Ground10" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1971789339]
+[node name="Ground10" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1971789339]
 position = Vector2(2097, 1089)
 texture = ExtResource("8_8ckmm")
 
-[node name="Ground11" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=733591964]
+[node name="Ground11" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=733591964]
 position = Vector2(2380, 969)
 texture = ExtResource("7_v338e")
 
-[node name="Ground12" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1806460305]
+[node name="Ground12" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1806460305]
 position = Vector2(2423, 914)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_v338e")
 
-[node name="Ground13" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=2099606810]
+[node name="Ground13" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=2099606810]
 position = Vector2(2037, 954)
 texture = ExtResource("5_8jq2n")
 
-[node name="Ground14" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=378294654]
+[node name="Ground14" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=378294654]
 position = Vector2(1829, 945)
 texture = ExtResource("6_qqo5w")
 
-[node name="Ground15" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1570936662]
+[node name="Ground15" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1570936662]
 position = Vector2(374, 925)
 texture = ExtResource("7_v338e")
 
-[node name="Ground16" type="Sprite2D" parent="Part1/AboveGrounds" unique_id=1671054766]
+[node name="Ground16" type="Sprite2D" parent="Forest/AboveGrounds" unique_id=1671054766]
 position = Vector2(87, 936)
 texture = ExtResource("5_8jq2n")
 
-[node name="Pillars" type="Node2D" parent="Part1" unique_id=379432978]
+[node name="Pillars" type="Node2D" parent="Forest" unique_id=379432978]
 
-[node name="MPillar3" type="Sprite2D" parent="Part1/Pillars" unique_id=761443281]
+[node name="MPillar3" type="Sprite2D" parent="Forest/Pillars" unique_id=761443281]
 position = Vector2(2234, 1330)
 texture = ExtResource("16_jamoa")
 
-[node name="MPillar2" type="Sprite2D" parent="Part1/Pillars" unique_id=1077184085]
+[node name="MPillar2" type="Sprite2D" parent="Forest/Pillars" unique_id=1077184085]
 position = Vector2(1926, 1456)
 texture = ExtResource("17_6i3ag")
 
-[node name="MPillar1" type="Sprite2D" parent="Part1/Pillars" unique_id=705587881]
+[node name="MPillar1" type="Sprite2D" parent="Forest/Pillars" unique_id=705587881]
 position = Vector2(2144, 1437)
 texture = ExtResource("18_c3crp")
 
-[node name="MPillar4" type="Sprite2D" parent="Part1/Pillars" unique_id=1870936401]
+[node name="MPillar4" type="Sprite2D" parent="Forest/Pillars" unique_id=1870936401]
 position = Vector2(2079, 1328)
 texture = ExtResource("19_sf71s")
 
-[node name="Pillar1" type="Sprite2D" parent="Part1/Pillars" unique_id=1967881679]
+[node name="Pillar1" type="Sprite2D" parent="Forest/Pillars" unique_id=1967881679]
 position = Vector2(210, 1232)
 texture = ExtResource("14_of5ei")
 
-[node name="Stone4" type="Sprite2D" parent="Part1/Pillars" unique_id=1299102639]
+[node name="Stone4" type="Sprite2D" parent="Forest/Pillars" unique_id=1299102639]
 position = Vector2(2078, 1526)
 texture = ExtResource("15_vu0kb")
 
-[node name="Stone5" type="Sprite2D" parent="Part1/Pillars" unique_id=305015297]
+[node name="Stone5" type="Sprite2D" parent="Forest/Pillars" unique_id=305015297]
 position = Vector2(2198, 1566)
 texture = ExtResource("16_1fpg6")
 
-[node name="Ruin3" type="Sprite2D" parent="Part1/Pillars" unique_id=254984551]
+[node name="Ruin3" type="Sprite2D" parent="Forest/Pillars" unique_id=254984551]
 position = Vector2(2417, 1504)
 texture = ExtResource("17_t3f10")
 
-[node name="Pillar2" type="Sprite2D" parent="Part1/Pillars" unique_id=287688178]
+[node name="Pillar2" type="Sprite2D" parent="Forest/Pillars" unique_id=287688178]
 position = Vector2(859, 1247)
 texture = ExtResource("45_0154k")
 
-[node name="Bush3" type="Sprite2D" parent="Part1/Pillars" unique_id=756267645]
+[node name="Bush3" type="Sprite2D" parent="Forest/Pillars" unique_id=756267645]
 position = Vector2(1833, 1143)
 texture = ExtResource("6_or6pv")
 
-[node name="Bush4" type="Sprite2D" parent="Part1/Pillars" unique_id=1806696498]
+[node name="Bush4" type="Sprite2D" parent="Forest/Pillars" unique_id=1806696498]
 position = Vector2(1751, 1158)
 texture = ExtResource("6_or6pv")
 
-[node name="Bush5" type="Sprite2D" parent="Part1/Pillars" unique_id=464396404]
+[node name="Bush5" type="Sprite2D" parent="Forest/Pillars" unique_id=464396404]
 position = Vector2(1818, 1180)
 texture = ExtResource("6_or6pv")
 
-[node name="Grass1" type="Sprite2D" parent="Part1/Pillars" unique_id=1743588325]
+[node name="Grass1" type="Sprite2D" parent="Forest/Pillars" unique_id=1743588325]
 position = Vector2(1655, 1222)
 texture = ExtResource("5_8lr3n")
 
-[node name="Grass2" type="Sprite2D" parent="Part1/Pillars" unique_id=647845241]
+[node name="Grass2" type="Sprite2D" parent="Forest/Pillars" unique_id=647845241]
 position = Vector2(1671, 1237)
 texture = ExtResource("43_kxj1l")
 
-[node name="Crack2" type="Sprite2D" parent="Part1/Pillars" unique_id=2131864975]
+[node name="Crack2" type="Sprite2D" parent="Forest/Pillars" unique_id=2131864975]
 position = Vector2(1907, 1477)
 texture = ExtResource("33_tjjws")
 
-[node name="Plants" type="Node2D" parent="Part1" unique_id=674892418]
+[node name="Plants" type="Node2D" parent="Forest" unique_id=674892418]
 
-[node name="Top4" type="Sprite2D" parent="Part1/Plants" unique_id=216346110]
+[node name="Top4" type="Sprite2D" parent="Forest/Plants" unique_id=216346110]
 z_index = 1
 position = Vector2(271, 708)
 texture = ExtResource("18_u3r2f")
 
-[node name="Top2" type="Sprite2D" parent="Part1/Plants" unique_id=483617858]
+[node name="Top2" type="Sprite2D" parent="Forest/Plants" unique_id=483617858]
 position = Vector2(57, 822)
 texture = ExtResource("19_gi0w5")
 
-[node name="Tree5" type="Sprite2D" parent="Part1/Plants" unique_id=2010268743]
+[node name="Tree5" type="Sprite2D" parent="Forest/Plants" unique_id=2010268743]
 position = Vector2(460, 1446)
 texture = ExtResource("20_gx4ul")
 
-[node name="Top5" type="Sprite2D" parent="Part1/Plants" unique_id=1200236070]
+[node name="Top5" type="Sprite2D" parent="Forest/Plants" unique_id=1200236070]
 position = Vector2(445, 1233)
 texture = ExtResource("18_u3r2f")
 
-[node name="Grass1" type="Sprite2D" parent="Part1/Plants" unique_id=692038748]
+[node name="Grass1" type="Sprite2D" parent="Forest/Plants" unique_id=692038748]
 position = Vector2(823, 1431)
 texture = ExtResource("5_8lr3n")
 
-[node name="Bush3" type="Sprite2D" parent="Part1/Plants" unique_id=915110149]
+[node name="Bush3" type="Sprite2D" parent="Forest/Plants" unique_id=915110149]
 position = Vector2(100, 1469)
 texture = ExtResource("6_or6pv")
 
-[node name="Bush4" type="Sprite2D" parent="Part1/Plants" unique_id=1847164031]
+[node name="Bush4" type="Sprite2D" parent="Forest/Plants" unique_id=1847164031]
 position = Vector2(151, 1473)
 texture = ExtResource("6_or6pv")
 
-[node name="Bush5" type="Sprite2D" parent="Part1/Plants" unique_id=464204617]
+[node name="Bush5" type="Sprite2D" parent="Forest/Plants" unique_id=464204617]
 position = Vector2(123, 1442)
 texture = ExtResource("6_or6pv")
 
-[node name="Board1" type="Sprite2D" parent="Part1/Plants" unique_id=727968407]
+[node name="Board1" type="Sprite2D" parent="Forest/Plants" unique_id=727968407]
 position = Vector2(238, 1404)
 texture = ExtResource("7_a01lr")
 
-[node name="Plant3" type="Sprite2D" parent="Part1/Plants" unique_id=1789861865]
+[node name="Plant3" type="Sprite2D" parent="Forest/Plants" unique_id=1789861865]
 position = Vector2(204, 1467)
 texture = ExtResource("8_21vke")
 
-[node name="Mushroom1" type="Sprite2D" parent="Part1/Plants" unique_id=1703192957]
+[node name="Mushroom1" type="Sprite2D" parent="Forest/Plants" unique_id=1703192957]
 position = Vector2(2335, 1180)
 texture = ExtResource("13_w4lpt")
 
-[node name="Mushroom2" type="Sprite2D" parent="Part1/Plants" unique_id=1602332726]
+[node name="Mushroom2" type="Sprite2D" parent="Forest/Plants" unique_id=1602332726]
 position = Vector2(2278, 1191)
 texture = ExtResource("14_t62cj")
 
-[node name="Mushroom3" type="Sprite2D" parent="Part1/Plants" unique_id=23383800]
+[node name="Mushroom3" type="Sprite2D" parent="Forest/Plants" unique_id=23383800]
 position = Vector2(2378, 1194)
 texture = ExtResource("15_s4vgh")
 
-[node name="Tree4" type="Sprite2D" parent="Part1/Plants" unique_id=2088422174]
+[node name="Tree4" type="Sprite2D" parent="Forest/Plants" unique_id=2088422174]
 position = Vector2(299, 967)
 texture = ExtResource("28_qa20e")
 
-[node name="Tree1" type="Sprite2D" parent="Part1/Plants" unique_id=1450231297]
+[node name="Tree1" type="Sprite2D" parent="Forest/Plants" unique_id=1450231297]
 z_index = 1
 position = Vector2(2383, 1096)
 texture = ExtResource("29_f4h7k")
 
-[node name="Tree2" type="Sprite2D" parent="Part1/Plants" unique_id=87445512]
+[node name="Tree2" type="Sprite2D" parent="Forest/Plants" unique_id=87445512]
 z_index = 1
 position = Vector2(2199, 957)
 texture = ExtResource("30_vhdqc")
 
-[node name="Tree3" type="Sprite2D" parent="Part1/Plants" unique_id=110477326]
+[node name="Tree3" type="Sprite2D" parent="Forest/Plants" unique_id=110477326]
 position = Vector2(116, 978)
 texture = ExtResource("31_0ghtv")
 
-[node name="Bush6" type="Sprite2D" parent="Part1/Plants" unique_id=512664959]
+[node name="Bush6" type="Sprite2D" parent="Forest/Plants" unique_id=512664959]
 position = Vector2(1774, 1105)
 texture = ExtResource("6_or6pv")
 
-[node name="Bush2" type="Sprite2D" parent="Part1/Plants" unique_id=1880752011]
+[node name="Bush2" type="Sprite2D" parent="Forest/Plants" unique_id=1880752011]
 position = Vector2(1342, 945)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush7" type="Sprite2D" parent="Part1/Plants" unique_id=1550711544]
+[node name="Bush7" type="Sprite2D" parent="Forest/Plants" unique_id=1550711544]
 position = Vector2(1451, 953)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush8" type="Sprite2D" parent="Part1/Plants" unique_id=1916731154]
+[node name="Bush8" type="Sprite2D" parent="Forest/Plants" unique_id=1916731154]
 position = Vector2(1398, 932)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush9" type="Sprite2D" parent="Part1/Plants" unique_id=498815208]
+[node name="Bush9" type="Sprite2D" parent="Forest/Plants" unique_id=498815208]
 position = Vector2(1514, 950)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush10" type="Sprite2D" parent="Part1/Plants" unique_id=2021667882]
+[node name="Bush10" type="Sprite2D" parent="Forest/Plants" unique_id=2021667882]
 position = Vector2(1470, 906)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush11" type="Sprite2D" parent="Part1/Plants" unique_id=1896583805]
+[node name="Bush11" type="Sprite2D" parent="Forest/Plants" unique_id=1896583805]
 position = Vector2(1581, 948)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush12" type="Sprite2D" parent="Part1/Plants" unique_id=521149799]
+[node name="Bush12" type="Sprite2D" parent="Forest/Plants" unique_id=521149799]
 position = Vector2(1557, 906)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush13" type="Sprite2D" parent="Part1/Plants" unique_id=1730122028]
+[node name="Bush13" type="Sprite2D" parent="Forest/Plants" unique_id=1730122028]
 position = Vector2(1648, 941)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush14" type="Sprite2D" parent="Part1/Plants" unique_id=1405378436]
+[node name="Bush14" type="Sprite2D" parent="Forest/Plants" unique_id=1405378436]
 position = Vector2(1616, 907)
 texture = ExtResource("38_f4h7k")
 
-[node name="Bush15" type="Sprite2D" parent="Part1/Plants" unique_id=102796701]
+[node name="Bush15" type="Sprite2D" parent="Forest/Plants" unique_id=102796701]
 position = Vector2(1712, 950)
 texture = ExtResource("38_f4h7k")
 
-[node name="Grass3" type="Sprite2D" parent="Part1/Plants" unique_id=2113039132]
+[node name="Grass3" type="Sprite2D" parent="Forest/Plants" unique_id=2113039132]
 position = Vector2(729, 1185)
 texture = ExtResource("42_pdm7m")
 
-[node name="Grass2" type="Sprite2D" parent="Part1/Plants" unique_id=1891525866]
+[node name="Grass2" type="Sprite2D" parent="Forest/Plants" unique_id=1891525866]
 position = Vector2(761, 1180)
 texture = ExtResource("43_kxj1l")
 
-[node name="Grass4" type="Sprite2D" parent="Part1/Plants" unique_id=607277225]
+[node name="Grass4" type="Sprite2D" parent="Forest/Plants" unique_id=607277225]
 position = Vector2(744, 1227)
 texture = ExtResource("5_8lr3n")
 
-[node name="DeerDead" type="Sprite2D" parent="Part1" unique_id=773089004]
+[node name="Grass5" type="Sprite2D" parent="Forest/Plants" unique_id=1144266277]
+position = Vector2(697, 1418)
+texture = ExtResource("43_kxj1l")
+
+[node name="Grass6" type="Sprite2D" parent="Forest/Plants" unique_id=339869885]
+position = Vector2(655, 1445)
+texture = ExtResource("42_pdm7m")
+
+[node name="Grass7" type="Sprite2D" parent="Forest/Plants" unique_id=1390586540]
+position = Vector2(695, 1462)
+texture = ExtResource("43_kxj1l")
+
+[node name="Grass8" type="Sprite2D" parent="Forest/Plants" unique_id=1308679495]
+position = Vector2(724, 1449)
+texture = ExtResource("5_8lr3n")
+
+[node name="Grass9" type="Sprite2D" parent="Forest/Plants" unique_id=400333934]
+position = Vector2(725, 1410)
+texture = ExtResource("5_8lr3n")
+
+[node name="Grass10" type="Sprite2D" parent="Forest/Plants" unique_id=928387822]
+position = Vector2(670, 1405)
+texture = ExtResource("43_kxj1l")
+
+[node name="Tree6" type="Sprite2D" parent="Forest/Plants" unique_id=1125421199]
+position = Vector2(728, 749)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree7" type="Sprite2D" parent="Forest/Plants" unique_id=1967310036]
+position = Vector2(828, 800)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree8" type="Sprite2D" parent="Forest/Plants" unique_id=1257787067]
+position = Vector2(997, 786)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree9" type="Sprite2D" parent="Forest/Plants" unique_id=1644935994]
+position = Vector2(916, 750)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree10" type="Sprite2D" parent="Forest/Plants" unique_id=1392487033]
+position = Vector2(638, 841)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree11" type="Sprite2D" parent="Forest/Plants" unique_id=1024405186]
+position = Vector2(540, 796)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree12" type="Sprite2D" parent="Forest/Plants" unique_id=1274497903]
+position = Vector2(1073, 705)
+texture = ExtResource("30_vhdqc")
+
+[node name="Tree13" type="Sprite2D" parent="Forest/Plants" unique_id=951710813]
+position = Vector2(1109, 991)
+texture = ExtResource("31_0ghtv")
+
+[node name="DeerDead" type="Sprite2D" parent="Forest" unique_id=773089004]
 modulate = Color(0.5803922, 0.5803922, 0.5921569, 1)
 z_index = 2
 position = Vector2(1472, 1308)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("52_ype5e")
 
-[node name="Pentagram" type="Sprite2D" parent="Part1" unique_id=750109399]
+[node name="Pentagram" type="Sprite2D" parent="Forest" unique_id=750109399]
 modulate = Color(0.59695137, 0, 1, 1)
 position = Vector2(1464.0002, 1366)
 rotation = -0.38920844
@@ -792,718 +1607,13 @@ scale = Vector2(1.5, 1.5)
 skew = -0.67893314
 texture = ExtResource("34_pdm7m")
 
-[node name="Blood" type="Sprite2D" parent="Part1" unique_id=1086812001]
+[node name="Blood" type="Sprite2D" parent="Forest" unique_id=1086812001]
 modulate = Color(0.60971165, 0, 1, 1)
 position = Vector2(1457, 1369)
 rotation = -2.979277
 scale = Vector2(0.8, 0.8)
 skew = 0.7435101
 texture = ExtResource("53_ufw7u")
-
-[node name="Part2" type="Node2D" parent="." unique_id=289046349]
-position = Vector2(2573, 36)
-
-[node name="Background" type="Node2D" parent="Part2" unique_id=856496052]
-
-[node name="BgTree1" type="Sprite2D" parent="Part2/Background" unique_id=1235770311]
-position = Vector2(2013, 823)
-texture = ExtResource("33_vu0kb")
-
-[node name="BgTree4" type="Sprite2D" parent="Part2/Background" unique_id=1640630040]
-position = Vector2(2383, 704)
-texture = ExtResource("34_1fpg6")
-
-[node name="BgTop2" type="Sprite2D" parent="Part2/Background" unique_id=109413668]
-position = Vector2(2011, 576)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop3" type="Sprite2D" parent="Part2/Background" unique_id=1189567520]
-position = Vector2(2340, 445)
-texture = ExtResource("5_gx4ul")
-
-[node name="BgTree7" type="Sprite2D" parent="Part2/Background" unique_id=1194009116]
-position = Vector2(1537, 704)
-texture = ExtResource("6_qa20e")
-
-[node name="BgTree9" type="Sprite2D" parent="Part2/Background" unique_id=992760294]
-position = Vector2(424, 631.5)
-texture = ExtResource("7_tiu1r")
-
-[node name="BgTree8" type="Sprite2D" parent="Part2/Background" unique_id=965431272]
-position = Vector2(276, 670.5)
-texture = ExtResource("6_qa20e")
-
-[node name="BgTop6" type="Sprite2D" parent="Part2/Background" unique_id=1458847513]
-position = Vector2(143, 429)
-texture = ExtResource("8_rw1gd")
-
-[node name="BgTop5" type="Sprite2D" parent="Part2/Background" unique_id=652729198]
-position = Vector2(410, 406)
-texture = ExtResource("9_d2f02")
-
-[node name="BgTop4" type="Sprite2D" parent="Part2/Background" unique_id=462470927]
-position = Vector2(1691, 493)
-texture = ExtResource("10_tjjws")
-
-[node name="BgTop7" type="Sprite2D" parent="Part2/Background" unique_id=1687945905]
-position = Vector2(1385, 452)
-texture = ExtResource("5_gx4ul")
-
-[node name="BgTree2" type="Sprite2D" parent="Part2/Background" unique_id=758095046]
-position = Vector2(1840, 669)
-texture = ExtResource("33_vu0kb")
-
-[node name="BgTree3" type="Sprite2D" parent="Part2/Background" unique_id=1576773704]
-position = Vector2(1763, 679)
-texture = ExtResource("33_vu0kb")
-
-[node name="BgTop8" type="Sprite2D" parent="Part2/Background" unique_id=1164767943]
-position = Vector2(78, 99)
-texture = ExtResource("8_rw1gd")
-
-[node name="BgTop9" type="Sprite2D" parent="Part2/Background" unique_id=134015269]
-position = Vector2(245, 65)
-texture = ExtResource("8_rw1gd")
-
-[node name="BgTop10" type="Sprite2D" parent="Part2/Background" unique_id=909755141]
-position = Vector2(524, 77)
-texture = ExtResource("5_gx4ul")
-
-[node name="BgTop11" type="Sprite2D" parent="Part2/Background" unique_id=1843235386]
-position = Vector2(743, 47)
-texture = ExtResource("10_tjjws")
-
-[node name="BgTop12" type="Sprite2D" parent="Part2/Background" unique_id=1348422314]
-position = Vector2(983, 74)
-texture = ExtResource("5_gx4ul")
-
-[node name="BgTop13" type="Sprite2D" parent="Part2/Background" unique_id=1249729021]
-position = Vector2(1259, 65)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop1" type="Sprite2D" parent="Part2/Background" unique_id=1704904579]
-position = Vector2(1469, 71)
-texture = ExtResource("46_ype5e")
-
-[node name="BgTop14" type="Sprite2D" parent="Part2/Background" unique_id=1196814462]
-position = Vector2(1697, 90)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop15" type="Sprite2D" parent="Part2/Background" unique_id=1466096910]
-position = Vector2(1910, 62)
-texture = ExtResource("5_gx4ul")
-
-[node name="BgTop16" type="Sprite2D" parent="Part2/Background" unique_id=1406059605]
-position = Vector2(2165, 59)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop17" type="Sprite2D" parent="Part2/Background" unique_id=816161117]
-position = Vector2(2365, 74)
-texture = ExtResource("46_ype5e")
-
-[node name="BgTop18" type="Sprite2D" parent="Part2/Background" unique_id=1690864383]
-position = Vector2(2469, 77)
-texture = ExtResource("46_ype5e")
-
-[node name="BgTop19" type="Sprite2D" parent="Part2/Background" unique_id=1959705044]
-position = Vector2(836, 178)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop20" type="Sprite2D" parent="Part2/Background" unique_id=129561650]
-position = Vector2(960, 249)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop21" type="Sprite2D" parent="Part2/Background" unique_id=1034408437]
-position = Vector2(976, 222)
-texture = ExtResource("46_ype5e")
-
-[node name="BgTop22" type="Sprite2D" parent="Part2/Background" unique_id=1827402389]
-position = Vector2(1192, 196)
-texture = ExtResource("4_gi0w5")
-
-[node name="BgTop23" type="Sprite2D" parent="Part2/Background" unique_id=1485353499]
-position = Vector2(708, 209)
-texture = ExtResource("46_ype5e")
-
-[node name="BgTree5" type="Sprite2D" parent="Part2/Background" unique_id=262581523]
-position = Vector2(629, 610)
-scale = Vector2(2, 2)
-texture = ExtResource("12_rw1gd")
-
-[node name="BgTree6" type="Sprite2D" parent="Part2/Background" unique_id=582952393]
-position = Vector2(2020, 416)
-scale = Vector2(2, 2)
-texture = ExtResource("12_rw1gd")
-
-[node name="BgTree10" type="Sprite2D" parent="Part2/Background" unique_id=382565682]
-position = Vector2(1148, 613)
-scale = Vector2(2, 2)
-texture = ExtResource("34_1fpg6")
-
-[node name="GroundLevel1" type="Node2D" parent="Part2" unique_id=182133672]
-
-[node name="Ground1" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=943313616]
-position = Vector2(93, 1524)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground2" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=908087067]
-position = Vector2(282, 1531)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground3" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1603698085]
-position = Vector2(479, 1538)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground4" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1704799183]
-position = Vector2(668, 1538)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground5" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1524537775]
-position = Vector2(859, 1543)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground7" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=404351806]
-position = Vector2(1263, 1546)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground8" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=463789777]
-z_index = -1
-position = Vector2(1452, 1549)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground9" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1185771232]
-position = Vector2(1643, 1540)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground10" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1979272796]
-z_index = -1
-position = Vector2(1826, 1543)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground11" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1313587152]
-position = Vector2(1906, 1545)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground12" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=1814031114]
-position = Vector2(1991, 1539)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground13" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=577428425]
-position = Vector2(2171, 1544)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground14" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=7546296]
-position = Vector2(2345, 1551)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground15" type="Sprite2D" parent="Part2/GroundLevel1" unique_id=24403064]
-position = Vector2(2467, 1551)
-texture = ExtResource("1_iq2dx")
-
-[node name="GroundLevel2" type="Node2D" parent="Part2" unique_id=1595009355]
-
-[node name="Ground6" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1259643995]
-position = Vector2(1060, 1546)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground16" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=953077489]
-position = Vector2(96, 1405)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground17" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1511213831]
-position = Vector2(200, 1414)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground18" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=427816720]
-position = Vector2(406, 1419)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground19" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1876290776]
-position = Vector2(606, 1429)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground20" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1590479457]
-position = Vector2(807, 1434)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground21" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=633689827]
-z_index = -1
-position = Vector2(980, 1431)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground22" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=620765913]
-position = Vector2(1176, 1426)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground23" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=113434550]
-position = Vector2(1375, 1415)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground24" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1371871935]
-position = Vector2(1584, 1415)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground25" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=849919679]
-position = Vector2(1788, 1415)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground26" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1864352942]
-position = Vector2(1966, 1417)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground27" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=720032958]
-position = Vector2(2097, 1434)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground28" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=1848977955]
-position = Vector2(2261, 1426)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground29" type="Sprite2D" parent="Part2/GroundLevel2" unique_id=2109645849]
-position = Vector2(2454, 1420)
-texture = ExtResource("2_kr0ld")
-
-[node name="GroundLevel3" type="Node2D" parent="Part2" unique_id=323155290]
-position = Vector2(6, -258)
-
-[node name="Ground1" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=521548758]
-position = Vector2(93, 1524)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground2" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=750136338]
-position = Vector2(282, 1531)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground3" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=82512959]
-position = Vector2(479, 1538)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground4" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=2039192222]
-position = Vector2(668, 1538)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground5" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=101638734]
-position = Vector2(859, 1543)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground7" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=702828233]
-position = Vector2(1263, 1546)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground8" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=867298461]
-z_index = -1
-position = Vector2(1452, 1549)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground9" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=1548591000]
-position = Vector2(1643, 1540)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground10" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=1962846266]
-z_index = -1
-position = Vector2(1826, 1543)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground11" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=720203910]
-position = Vector2(1906, 1545)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground12" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=601205026]
-position = Vector2(1991, 1539)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground13" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=894738786]
-position = Vector2(2171, 1544)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground14" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=2100723724]
-position = Vector2(2345, 1551)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground15" type="Sprite2D" parent="Part2/GroundLevel3" unique_id=318577710]
-position = Vector2(2467, 1551)
-texture = ExtResource("1_iq2dx")
-
-[node name="GroundLevel4" type="Node2D" parent="Part2" unique_id=352084391]
-position = Vector2(18, -257)
-
-[node name="Ground6" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=118677226]
-position = Vector2(1060, 1546)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground16" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=1941838289]
-position = Vector2(96, 1405)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground17" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=70086878]
-position = Vector2(200, 1414)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground18" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=2116155725]
-position = Vector2(406, 1419)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground19" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=1169795234]
-position = Vector2(606, 1429)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground20" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=1444486213]
-position = Vector2(807, 1434)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground21" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=1111101659]
-z_index = -1
-position = Vector2(980, 1431)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground22" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=638799366]
-position = Vector2(1176, 1426)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground23" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=597358521]
-position = Vector2(1375, 1415)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground24" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=429829316]
-position = Vector2(1584, 1415)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground25" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=969063158]
-position = Vector2(1788, 1415)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground26" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=112173744]
-position = Vector2(1966, 1417)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground27" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=651761514]
-position = Vector2(2097, 1434)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground28" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=2083567283]
-position = Vector2(2261, 1426)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground29" type="Sprite2D" parent="Part2/GroundLevel4" unique_id=1868156320]
-position = Vector2(2454, 1420)
-texture = ExtResource("2_kr0ld")
-
-[node name="GroundLevel5" type="Node2D" parent="Part2" unique_id=2017286265]
-position = Vector2(29, -504)
-
-[node name="Ground1" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=1452838642]
-position = Vector2(93, 1524)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground2" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=292754652]
-position = Vector2(282, 1531)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground3" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=2108768178]
-position = Vector2(479, 1538)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground4" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=1593548491]
-position = Vector2(668, 1538)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground5" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=522390558]
-position = Vector2(859, 1543)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground7" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=42936196]
-position = Vector2(1263, 1546)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground8" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=343635790]
-z_index = -1
-position = Vector2(1452, 1549)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground9" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=1378271467]
-position = Vector2(1643, 1540)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground10" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=283295588]
-z_index = -1
-position = Vector2(1826, 1543)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground11" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=1226293441]
-position = Vector2(1906, 1545)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground12" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=1711012729]
-position = Vector2(1991, 1539)
-texture = ExtResource("4_b38ju")
-
-[node name="Ground13" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=256152262]
-position = Vector2(2171, 1544)
-texture = ExtResource("3_3o7c2")
-
-[node name="Ground14" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=271414141]
-position = Vector2(2345, 1551)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground15" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=2063954852]
-position = Vector2(2467, 1551)
-texture = ExtResource("1_iq2dx")
-
-[node name="Ground6" type="Sprite2D" parent="Part2/GroundLevel5" unique_id=1139365839]
-position = Vector2(1063, 1543)
-texture = ExtResource("1_iq2dx")
-
-[node name="AboveGrounds" type="Node2D" parent="Part2" unique_id=2121336871]
-
-[node name="Ground2" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=346573292]
-position = Vector2(1064, 1292)
-texture = ExtResource("2_kr0ld")
-
-[node name="Ground5" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=2134314323]
-position = Vector2(710, 1101)
-texture = ExtResource("5_8jq2n")
-
-[node name="Ground6" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=1255291556]
-position = Vector2(927, 1274)
-texture = ExtResource("6_qqo5w")
-
-[node name="Ground7" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=276419793]
-position = Vector2(510, 1304)
-texture = ExtResource("5_8jq2n")
-
-[node name="Ground8" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=1753826870]
-position = Vector2(1260, 1324)
-texture = ExtResource("6_qqo5w")
-
-[node name="Ground9" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=259636733]
-position = Vector2(2383, 1091)
-texture = ExtResource("7_v338e")
-
-[node name="Ground10" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=487731160]
-position = Vector2(2097, 1089)
-texture = ExtResource("8_8ckmm")
-
-[node name="Ground11" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=2086003276]
-position = Vector2(2380, 969)
-texture = ExtResource("7_v338e")
-
-[node name="Ground12" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=102778505]
-position = Vector2(2423, 914)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_v338e")
-
-[node name="Ground13" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=953160053]
-position = Vector2(2037, 954)
-texture = ExtResource("5_8jq2n")
-
-[node name="Ground14" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=514823507]
-position = Vector2(1829, 945)
-texture = ExtResource("6_qqo5w")
-
-[node name="Ground15" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=908851210]
-position = Vector2(374, 925)
-texture = ExtResource("7_v338e")
-
-[node name="Ground16" type="Sprite2D" parent="Part2/AboveGrounds" unique_id=137826016]
-position = Vector2(87, 936)
-texture = ExtResource("5_8jq2n")
-
-[node name="Pillars" type="Node2D" parent="Part2" unique_id=180084427]
-
-[node name="MPillar3" type="Sprite2D" parent="Part2/Pillars" unique_id=457454265]
-position = Vector2(2234, 1330)
-texture = ExtResource("16_jamoa")
-
-[node name="MPillar2" type="Sprite2D" parent="Part2/Pillars" unique_id=142666599]
-position = Vector2(1926, 1456)
-texture = ExtResource("17_6i3ag")
-
-[node name="MPillar1" type="Sprite2D" parent="Part2/Pillars" unique_id=415225535]
-position = Vector2(2144, 1437)
-texture = ExtResource("18_c3crp")
-
-[node name="MPillar4" type="Sprite2D" parent="Part2/Pillars" unique_id=2008859325]
-position = Vector2(2079, 1328)
-texture = ExtResource("19_sf71s")
-
-[node name="Pillar1" type="Sprite2D" parent="Part2/Pillars" unique_id=6071325]
-position = Vector2(210, 1232)
-texture = ExtResource("14_of5ei")
-
-[node name="Stone4" type="Sprite2D" parent="Part2/Pillars" unique_id=125092732]
-position = Vector2(2078, 1526)
-texture = ExtResource("15_vu0kb")
-
-[node name="Stone5" type="Sprite2D" parent="Part2/Pillars" unique_id=1628681784]
-position = Vector2(2198, 1566)
-texture = ExtResource("16_1fpg6")
-
-[node name="Ruin3" type="Sprite2D" parent="Part2/Pillars" unique_id=1872549985]
-position = Vector2(2417, 1504)
-texture = ExtResource("17_t3f10")
-
-[node name="Pillar2" type="Sprite2D" parent="Part2/Pillars" unique_id=511301464]
-position = Vector2(859, 1247)
-texture = ExtResource("45_0154k")
-
-[node name="Bush3" type="Sprite2D" parent="Part2/Pillars" unique_id=2031568383]
-position = Vector2(1833, 1143)
-texture = ExtResource("6_or6pv")
-
-[node name="Bush4" type="Sprite2D" parent="Part2/Pillars" unique_id=160247533]
-position = Vector2(1751, 1158)
-texture = ExtResource("6_or6pv")
-
-[node name="Bush5" type="Sprite2D" parent="Part2/Pillars" unique_id=1247991384]
-position = Vector2(1818, 1180)
-texture = ExtResource("6_or6pv")
-
-[node name="Grass1" type="Sprite2D" parent="Part2/Pillars" unique_id=269738243]
-position = Vector2(1655, 1222)
-texture = ExtResource("5_8lr3n")
-
-[node name="Grass2" type="Sprite2D" parent="Part2/Pillars" unique_id=232432444]
-position = Vector2(1671, 1237)
-texture = ExtResource("43_kxj1l")
-
-[node name="Crack2" type="Sprite2D" parent="Part2/Pillars" unique_id=1750302852]
-position = Vector2(1907, 1477)
-texture = ExtResource("33_tjjws")
-
-[node name="Plants" type="Node2D" parent="Part2" unique_id=1350184926]
-
-[node name="Top4" type="Sprite2D" parent="Part2/Plants" unique_id=1737856551]
-z_index = 1
-position = Vector2(271, 708)
-texture = ExtResource("18_u3r2f")
-
-[node name="Top2" type="Sprite2D" parent="Part2/Plants" unique_id=673578683]
-position = Vector2(57, 822)
-texture = ExtResource("19_gi0w5")
-
-[node name="Tree5" type="Sprite2D" parent="Part2/Plants" unique_id=1883151361]
-position = Vector2(460, 1446)
-texture = ExtResource("20_gx4ul")
-
-[node name="Top5" type="Sprite2D" parent="Part2/Plants" unique_id=63120810]
-position = Vector2(445, 1233)
-texture = ExtResource("18_u3r2f")
-
-[node name="Grass1" type="Sprite2D" parent="Part2/Plants" unique_id=1262448900]
-position = Vector2(823, 1431)
-texture = ExtResource("5_8lr3n")
-
-[node name="Bush3" type="Sprite2D" parent="Part2/Plants" unique_id=1530788721]
-position = Vector2(100, 1469)
-texture = ExtResource("6_or6pv")
-
-[node name="Bush4" type="Sprite2D" parent="Part2/Plants" unique_id=5493917]
-position = Vector2(151, 1473)
-texture = ExtResource("6_or6pv")
-
-[node name="Bush5" type="Sprite2D" parent="Part2/Plants" unique_id=1526040931]
-position = Vector2(123, 1442)
-texture = ExtResource("6_or6pv")
-
-[node name="Board1" type="Sprite2D" parent="Part2/Plants" unique_id=2005426610]
-position = Vector2(238, 1404)
-texture = ExtResource("7_a01lr")
-
-[node name="Plant3" type="Sprite2D" parent="Part2/Plants" unique_id=2082069444]
-position = Vector2(204, 1467)
-texture = ExtResource("8_21vke")
-
-[node name="Mushroom1" type="Sprite2D" parent="Part2/Plants" unique_id=2077595523]
-position = Vector2(2335, 1180)
-texture = ExtResource("13_w4lpt")
-
-[node name="Mushroom2" type="Sprite2D" parent="Part2/Plants" unique_id=1794194725]
-position = Vector2(2278, 1191)
-texture = ExtResource("14_t62cj")
-
-[node name="Mushroom3" type="Sprite2D" parent="Part2/Plants" unique_id=1513875196]
-position = Vector2(2378, 1194)
-texture = ExtResource("15_s4vgh")
-
-[node name="Tree4" type="Sprite2D" parent="Part2/Plants" unique_id=1407245045]
-position = Vector2(299, 967)
-texture = ExtResource("28_qa20e")
-
-[node name="Tree1" type="Sprite2D" parent="Part2/Plants" unique_id=1692278700]
-z_index = 1
-position = Vector2(2383, 1096)
-texture = ExtResource("29_f4h7k")
-
-[node name="Tree2" type="Sprite2D" parent="Part2/Plants" unique_id=1263815818]
-z_index = 1
-position = Vector2(2199, 957)
-texture = ExtResource("30_vhdqc")
-
-[node name="Tree3" type="Sprite2D" parent="Part2/Plants" unique_id=763145994]
-position = Vector2(116, 978)
-texture = ExtResource("31_0ghtv")
-
-[node name="Bush6" type="Sprite2D" parent="Part2/Plants" unique_id=2099167216]
-position = Vector2(1774, 1105)
-texture = ExtResource("6_or6pv")
-
-[node name="Bush2" type="Sprite2D" parent="Part2/Plants" unique_id=1193010278]
-position = Vector2(1342, 945)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush7" type="Sprite2D" parent="Part2/Plants" unique_id=1669191989]
-position = Vector2(1451, 953)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush8" type="Sprite2D" parent="Part2/Plants" unique_id=1953093460]
-position = Vector2(1398, 932)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush9" type="Sprite2D" parent="Part2/Plants" unique_id=1583317255]
-position = Vector2(1514, 950)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush10" type="Sprite2D" parent="Part2/Plants" unique_id=1987645527]
-position = Vector2(1470, 906)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush11" type="Sprite2D" parent="Part2/Plants" unique_id=1407569568]
-position = Vector2(1581, 948)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush12" type="Sprite2D" parent="Part2/Plants" unique_id=1263626294]
-position = Vector2(1557, 906)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush13" type="Sprite2D" parent="Part2/Plants" unique_id=530014424]
-position = Vector2(1648, 941)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush14" type="Sprite2D" parent="Part2/Plants" unique_id=1786395796]
-position = Vector2(1616, 907)
-texture = ExtResource("38_f4h7k")
-
-[node name="Bush15" type="Sprite2D" parent="Part2/Plants" unique_id=504151856]
-position = Vector2(1712, 950)
-texture = ExtResource("38_f4h7k")
-
-[node name="Grass3" type="Sprite2D" parent="Part2/Plants" unique_id=740939893]
-position = Vector2(729, 1185)
-texture = ExtResource("42_pdm7m")
-
-[node name="Grass2" type="Sprite2D" parent="Part2/Plants" unique_id=900393367]
-position = Vector2(761, 1180)
-texture = ExtResource("43_kxj1l")
-
-[node name="Grass4" type="Sprite2D" parent="Part2/Plants" unique_id=509556242]
-position = Vector2(744, 1227)
-texture = ExtResource("5_8lr3n")
-
-[node name="TreeHousing" type="Node2D" parent="Part2" unique_id=1811726408]
-
-[node name="Treehouse" type="Sprite2D" parent="Part2/TreeHousing" unique_id=1338438655]
-position = Vector2(945, 716)
-texture = ExtResource("32_6fknd")
 
 [node name="BgColorDark2" type="Sprite2D" parent="." unique_id=1240989506]
 modulate = Color(0.3019608, 1, 1, 1)
@@ -1513,17 +1623,31 @@ scale = Vector2(100, 100)
 texture = ExtResource("1_gmxja")
 
 [node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("50_pdm7m")]
-position = Vector2(2567, 11)
+position = Vector2(2566, 13)
 amount = 5000
 emission_rect_extents = Vector2(5000, 1)
 
-[node name="Fog" parent="." unique_id=995094908 instance=ExtResource("51_kxj1l")]
-z_index = 8
-position = Vector2(2617, 806)
-scale = Vector2(2, 1)
+[node name="Treehouse" type="Sprite2D" parent="." unique_id=1735172165]
+position = Vector2(3624, 794)
+texture = ExtResource("32_6fknd")
+
+[node name="Top5" type="Sprite2D" parent="Treehouse" unique_id=848725551]
+position = Vector2(-61, -700)
+scale = Vector2(3, 3)
+texture = ExtResource("18_u3r2f")
+
+[node name="Top4" type="Sprite2D" parent="Treehouse" unique_id=355888010]
+position = Vector2(-402, -43)
+rotation = -0.58294
+texture = ExtResource("18_u3r2f")
+
+[node name="Top1" type="Sprite2D" parent="Treehouse" unique_id=597715546]
+position = Vector2(417.00024, -138.00006)
+rotation = 0.22165681
+texture = ExtResource("66_fvbyp")
 
 [node name="BunnyFriendly" type="Sprite2D" parent="." unique_id=1508910966]
-position = Vector2(3828.0002, 1024)
+position = Vector2(3807.0002, 1241)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("56_w5y4v")
 flip_h = true
@@ -1536,8 +1660,13 @@ position = Vector2(251.66504, 0)
 shape = SubResource("RectangleShape2D_icjpl")
 
 [node name="Lion" type="Sprite2D" parent="." unique_id=103521724]
-position = Vector2(4038, 1051)
+position = Vector2(4015, 1247)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("57_v7gfb")
+
+[node name="Fog" parent="." unique_id=995094908 instance=ExtResource("51_kxj1l")]
+z_index = 8
+position = Vector2(2617, 806)
+scale = Vector2(2, 1)
 
 [connection signal="body_entered" from="BunnyFriendly/Area2D" to="BunnyFriendly" method="_on_area_2d_body_entered"]

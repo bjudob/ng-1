@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 500.0
+const SPEED = 650.0
 
 @onready var sprite = $Sprite
 var movementTarget = Vector2()

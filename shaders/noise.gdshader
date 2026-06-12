@@ -3,8 +3,7 @@ shader_type canvas_item;
 // Hint tells Godot 4 to grab the background behind the object
 uniform sampler2D screen_texture : hint_screen_texture;
 uniform vec2 scroll = vec2(0.01, 0.01);
-uniform float intensity = 0.10;
-
+uniform float intensity = 0.05;
 void fragment() {
 	// 1. Keep the UV coordinates repeating between 0.0 and 1.0
 	vec2 moving_uv = fract(UV + scroll * TIME);
