@@ -1,6 +1,8 @@
 class_name Main
 extends Node2D
 
+@onready var gameMenu = $GameMenu
+
 enum Level {
 	# ui
 	MAIN_MENU,
@@ -16,6 +18,11 @@ enum Level {
 func _ready() -> void:
 	change_scene(Main.Level.MAIN_MENU)
 
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("menu"):
+		gameMenu.visible = true
+	
+	
 func change_scene(level: Main.Level):
 	var levelScene = levelToScene[level]
 	if not has_child(levelScene):

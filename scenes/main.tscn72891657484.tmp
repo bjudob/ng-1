@@ -18,8 +18,6 @@ top_level = true
 
 [node name="GameMenu" type="Node2D" parent="." unique_id=1086373383]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="GameMenu" unique_id=1990113417]
-
 [node name="Map" parent="." unique_id=1941419652 instance=ExtResource("7_o6xl0")]
 
 [node name="Clearing666" parent="." unique_id=1549510716 instance=ExtResource("3_sugp2")]
