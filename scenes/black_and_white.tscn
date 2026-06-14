@@ -12,7 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://dwfb1pbpn00il" path="res://images/black/flower_2.png" id="8_un8nv"]
 [ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="9_3iuu4"]
 [ext_resource type="PackedScene" uid="uid://xnd26wbjtf1w" path="res://scenes/ghost_deer_mini.tscn" id="11_e2x2x"]
+[ext_resource type="PackedScene" uid="uid://d3rul46ijlmgl" path="res://scenes/raining_blood.tscn" id="13_un8nv"]
 [ext_resource type="PackedScene" uid="uid://bfs0amee2tltg" path="res://scenes/bunny.tscn" id="13_uru6d"]
+[ext_resource type="PackedScene" uid="uid://cyr0l0d10418h" path="res://scenes/bear.tscn" id="15_4kasl"]
+[ext_resource type="PackedScene" uid="uid://c7m8tx1oisgq7" path="res://scenes/bat.tscn" id="16_0d7vk"]
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
@@ -111,7 +114,17 @@ texture = ExtResource("8_un8nv")
 position = Vector2(28, 779)
 
 [node name="GhostDeer" parent="." unique_id=1454144664 instance=ExtResource("11_e2x2x")]
+visible = false
 position = Vector2(1478, 703)
+
+[node name="CPUParticles2D2" parent="." unique_id=1064453585 instance=ExtResource("13_un8nv")]
+position = Vector2(1567, -3)
 
 [node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("13_uru6d")]
 position = Vector2(1664, 1033)
+
+[node name="Bear" parent="." unique_id=4868764 instance=ExtResource("15_4kasl")]
+position = Vector2(1089, 931)
+
+[node name="Bat" parent="." unique_id=194123093 instance=ExtResource("16_0d7vk")]
+position = Vector2(1246, 217)

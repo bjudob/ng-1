@@ -63,6 +63,7 @@ _data = {
 script = ExtResource("1_w2avb")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=242345809]
+z_index = 10
 material = SubResource("ShaderMaterial_7ebwd")
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_w2avb")
