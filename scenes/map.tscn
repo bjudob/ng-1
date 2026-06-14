@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://0i2d3cslpgkp"]
 
 [ext_resource type="Texture2D" uid="uid://bmjb16qx44s4l" path="res://images/fantasy_forest/bg_color_dark2.png" id="1_gmxja"]
-[ext_resource type="Script" uid="uid://hih5l6oclw7c" path="res://scripts/camera.gd" id="1_nc68e"]
-[ext_resource type="Script" uid="uid://ceknimb7o3135" path="res://scenes/map.gd" id="1_v7gfb"]
+[ext_resource type="Script" uid="uid://ceknimb7o3135" path="res://scripts/map.gd" id="1_v7gfb"]
+[ext_resource type="PackedScene" uid="uid://cdcnpwg2gu7ab" path="res://scenes/camera.tscn" id="2_qcc5i"]
 [ext_resource type="PackedScene" uid="uid://dntfya56g5fmx" path="res://scenes/ghost_deer.tscn" id="2_r2y85"]
 [ext_resource type="PackedScene" uid="uid://v8phyohe6vgm" path="res://scenes/background.tscn" id="4_qcc5i"]
 [ext_resource type="Texture2D" uid="uid://c8ss87l7mgte" path="res://images/fantasy_forest/grass1.png" id="5_8lr3n"]
@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="53_ufw7u"]
 [ext_resource type="Texture2D" uid="uid://b0kvvko7timdh" path="res://images/characters/bunny_friendly.png" id="56_w5y4v"]
 [ext_resource type="Texture2D" uid="uid://d4780gb1hwgu" path="res://images/characters/lion.png" id="57_v7gfb"]
-[ext_resource type="Script" uid="uid://inehv464la5x" path="res://scenes/bunny_friendly.gd" id="58_icjpl"]
+[ext_resource type="Script" uid="uid://inehv464la5x" path="res://scripts/bunny_friendly.gd" id="58_icjpl"]
 [ext_resource type="Texture2D" uid="uid://dmu6yvbm7ll51" path="res://images/fantasy_forest/top3.png" id="59_icjpl"]
 [ext_resource type="Texture2D" uid="uid://c25sw6s3mm16f" path="res://images/fantasy_forest/plant2.png" id="61_sp2wr"]
 [ext_resource type="Texture2D" uid="uid://bsqtfuvywsmm7" path="res://images/fantasy_forest/top1.png" id="66_fvbyp"]
@@ -49,9 +49,7 @@ size = Vector2(2776.6665, 1200)
 modulate = Color(0.6862745, 0.6666667, 0.67058825, 1)
 script = ExtResource("1_v7gfb")
 
-[node name="Camera" type="Camera2D" parent="." unique_id=1254370210]
-anchor_mode = 0
-script = ExtResource("1_nc68e")
+[node name="Camera" parent="." unique_id=2001042165 instance=ExtResource("2_qcc5i")]
 
 [node name="GhostDeer" parent="." unique_id=155461262 instance=ExtResource("2_r2y85")]
 position = Vector2(1439, 1095)

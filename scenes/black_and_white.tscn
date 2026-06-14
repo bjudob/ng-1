@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://cd3fddw8v4y81"]
+
+[ext_resource type="PackedScene" uid="uid://cdcnpwg2gu7ab" path="res://scenes/camera.tscn" id="1_g33r8"]
+[ext_resource type="Texture2D" uid="uid://ca42yqohb0114" path="res://images/black/ground_1.png" id="1_j6ete"]
+[ext_resource type="AudioStream" uid="uid://uefwmone33mp" path="res://music/dark_orchestra.mp3" id="1_uru6d"]
+[ext_resource type="Texture2D" uid="uid://bgrfh8dhl4fht" path="res://images/black/bush_1.png" id="3_3iuu4"]
+[ext_resource type="Texture2D" uid="uid://q3gtgbqum328" path="res://images/black/bush_2.png" id="3_m2agh"]
+[ext_resource type="Texture2D" uid="uid://d1sakqnh4ykrm" path="res://images/black/tree_1.png" id="4_m2agh"]
+[ext_resource type="Texture2D" uid="uid://cxjcnabw4hpjc" path="res://images/black/mushroom_1.png" id="5_e2x2x"]
+[ext_resource type="Texture2D" uid="uid://dm4k25vis5met" path="res://images/black/tree_2.png" id="6_g33r8"]
+[ext_resource type="Texture2D" uid="uid://cac3p2ekpfkmt" path="res://images/black/flower_1.png" id="7_uru6d"]
+[ext_resource type="Texture2D" uid="uid://dwfb1pbpn00il" path="res://images/black/flower_2.png" id="8_un8nv"]
+[ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="9_3iuu4"]
+[ext_resource type="PackedScene" uid="uid://xnd26wbjtf1w" path="res://scenes/ghost_deer_mini.tscn" id="11_e2x2x"]
+[ext_resource type="PackedScene" uid="uid://bfs0amee2tltg" path="res://scenes/bunny.tscn" id="13_uru6d"]
+
+[node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=2119095027]
+stream = ExtResource("1_uru6d")
+autoplay = true
+
+[node name="Camera" parent="." unique_id=2001042165 instance=ExtResource("1_g33r8")]
+
+[node name="BackBackground" type="Node2D" parent="." unique_id=753748220]
+modulate = Color(1, 1, 1, 0.11764706)
+
+[node name="Background" type="Node2D" parent="." unique_id=1705253227]
+modulate = Color(1, 1, 1, 0.27450982)
+
+[node name="Bush1" type="Sprite2D" parent="Background" unique_id=27824773]
+position = Vector2(1935, 901)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_3iuu4")
+
+[node name="Tree1" type="Sprite2D" parent="Background" unique_id=1146138380]
+position = Vector2(2332, 472)
+texture = ExtResource("4_m2agh")
+
+[node name="Tree2" type="Sprite2D" parent="Background" unique_id=1116812267]
+position = Vector2(1285, 567)
+texture = ExtResource("4_m2agh")
+
+[node name="Bush3" type="Sprite2D" parent="Background" unique_id=467316798]
+position = Vector2(1075, 867)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_m2agh")
+
+[node name="Tree3" type="Sprite2D" parent="Background" unique_id=1021932363]
+position = Vector2(504, 518)
+texture = ExtResource("4_m2agh")
+
+[node name="Bush2" type="Sprite2D" parent="Background" unique_id=1812140654]
+position = Vector2(2369, 967)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_m2agh")
+
+[node name="Flower1" type="Sprite2D" parent="Background" unique_id=1007271304]
+position = Vector2(1490, 1123)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("7_uru6d")
+
+[node name="Flower2" type="Sprite2D" parent="Background" unique_id=1136371506]
+position = Vector2(1527, 1138)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("7_uru6d")
+
+[node name="Flower3" type="Sprite2D" parent="Background" unique_id=1696731148]
+position = Vector2(1454, 1149.0001)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("7_uru6d")
+
+[node name="Foreground" type="Node2D" parent="." unique_id=1027020053]
+
+[node name="Ground1" type="Sprite2D" parent="Foreground" unique_id=1881126492]
+position = Vector2(1297.5, 1427.25)
+scale = Vector2(1.3500977, 0.2512207)
+texture = ExtResource("1_j6ete")
+
+[node name="Bush1" type="Sprite2D" parent="Foreground" unique_id=721542788]
+position = Vector2(336.00006, 914)
+scale = Vector2(0.28759766, 0.31396484)
+texture = ExtResource("3_3iuu4")
+
+[node name="Tree1" type="Sprite2D" parent="Foreground" unique_id=1470416274]
+position = Vector2(2151.0002, 523)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_m2agh")
+
+[node name="Mushroom1" type="Sprite2D" parent="Foreground" unique_id=689862407]
+position = Vector2(1947, 1075)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_e2x2x")
+
+[node name="Tree2" type="Sprite2D" parent="Foreground" unique_id=1427992644]
+position = Vector2(603, 519.00006)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("6_g33r8")
+
+[node name="Flower1" type="Sprite2D" parent="Foreground" unique_id=405117865]
+position = Vector2(2251, 1112)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_uru6d")
+
+[node name="Flower2" type="Sprite2D" parent="Foreground" unique_id=524721253]
+position = Vector2(753, 1017)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_un8nv")
+
+[node name="Fog" parent="." unique_id=995094908 instance=ExtResource("9_3iuu4")]
+position = Vector2(28, 779)
+
+[node name="GhostDeer" parent="." unique_id=1454144664 instance=ExtResource("11_e2x2x")]
+position = Vector2(1478, 703)
+
+[node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("13_uru6d")]
+position = Vector2(1664, 1033)
