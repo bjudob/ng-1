@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://mwepkcklhins" path="res://scripts/ghost_deer.gd" id="1_l54n0"]
 [ext_resource type="Shader" uid="uid://dajck5rvonk5r" path="res://shaders/ghost_deer.gdshader" id="2_60f5t"]
-[ext_resource type="Texture2D" uid="uid://brgpg668rj55u" path="res://images/characters/deer_ghost_3.png" id="3_60f5t"]
+[ext_resource type="Texture2D" uid="uid://brgpg668rj55u" path="res://images/old/characters/deer_ghost_3.png" id="3_60f5t"]
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_60f5t"]
 

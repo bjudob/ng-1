@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://ccjejpkou3m56"]
 
-[ext_resource type="Texture2D" uid="uid://ncl3m6vy21qn" path="res://images/backgrounds/clearing_penta.png" id="1_1va06"]
+[ext_resource type="Texture2D" uid="uid://ncl3m6vy21qn" path="res://images/old/backgrounds/clearing_penta.png" id="1_1va06"]
 [ext_resource type="Script" uid="uid://cn5p8ux2wjnk4" path="res://scripts/clearing_666.gd" id="1_61vdq"]
-[ext_resource type="Texture2D" uid="uid://frk2f48rhw7" path="res://images/characters/deer_dead.png" id="3_0yhhp"]
-[ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/objects/blood.png" id="4_bkb37"]
+[ext_resource type="Texture2D" uid="uid://frk2f48rhw7" path="res://images/old/characters/deer_dead.png" id="3_0yhhp"]
+[ext_resource type="Texture2D" uid="uid://cfqvsa0gtoqdm" path="res://images/old/objects/blood.png" id="4_bkb37"]
 [ext_resource type="PackedScene" uid="uid://d3rul46ijlmgl" path="res://scenes/raining_blood.tscn" id="5_6hfel"]
 [ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="6_6hfel"]
-[ext_resource type="Texture2D" uid="uid://b31rix53apkqt" path="res://images/objects/rock.png" id="7_6hfel"]
+[ext_resource type="Texture2D" uid="uid://b31rix53apkqt" path="res://images/old/objects/rock.png" id="7_6hfel"]
 
 [node name="Clearing666" type="Node2D" unique_id=1549510716]
 script = ExtResource("1_61vdq")

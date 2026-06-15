@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://wrxm4nrdwd13"]
 
-[ext_resource type="Texture2D" uid="uid://cvklpnm4ibpdd" path="res://images/fantasy_forest/ground1.png" id="1_2c1ag"]
-[ext_resource type="Texture2D" uid="uid://dm7udv3lesxcq" path="res://images/fantasy_forest/ground2.png" id="2_modao"]
-[ext_resource type="Texture2D" uid="uid://bqqfg1emcwlme" path="res://images/fantasy_forest/ground3.png" id="3_176r3"]
-[ext_resource type="Texture2D" uid="uid://claf1lkuc8y1q" path="res://images/fantasy_forest/ground4.png" id="4_vuhkc"]
-[ext_resource type="Texture2D" uid="uid://dbpatnmqhutng" path="res://images/fantasy_forest/ground6.png" id="10_rncil"]
-[ext_resource type="Texture2D" uid="uid://cjaya556qjvik" path="res://images/fantasy_forest/ground7.png" id="11_2tk4m"]
-[ext_resource type="Texture2D" uid="uid://d1vc1kv0ingr0" path="res://images/fantasy_forest/ground9.png" id="12_gur08"]
+[ext_resource type="Texture2D" uid="uid://cvklpnm4ibpdd" path="res://images/old/fantasy_forest/ground1.png" id="1_2c1ag"]
+[ext_resource type="Texture2D" uid="uid://dm7udv3lesxcq" path="res://images/old/fantasy_forest/ground2.png" id="2_modao"]
+[ext_resource type="Texture2D" uid="uid://bqqfg1emcwlme" path="res://images/old/fantasy_forest/ground3.png" id="3_176r3"]
+[ext_resource type="Texture2D" uid="uid://claf1lkuc8y1q" path="res://images/old/fantasy_forest/ground4.png" id="4_vuhkc"]
+[ext_resource type="Texture2D" uid="uid://dbpatnmqhutng" path="res://images/old/fantasy_forest/ground6.png" id="10_rncil"]
+[ext_resource type="Texture2D" uid="uid://cjaya556qjvik" path="res://images/old/fantasy_forest/ground7.png" id="11_2tk4m"]
+[ext_resource type="Texture2D" uid="uid://d1vc1kv0ingr0" path="res://images/old/fantasy_forest/ground9.png" id="12_gur08"]
 
 [node name="Ground" type="Node2D" unique_id=1102781954]
 rotation = -0.027925268

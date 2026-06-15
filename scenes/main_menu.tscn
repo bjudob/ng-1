@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cnf3ofhydgnbn"]
 
 [ext_resource type="Script" uid="uid://bmpotlx77n2p6" path="res://scripts/main_menu.gd" id="1_8ln24"]
-[ext_resource type="Texture2D" uid="uid://c4k1v0rvfm8tl" path="res://images/backgrounds/background_goth_mask.png" id="2_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://5833bmbyiogk" path="res://images/buttons_goth/button_continue_goth.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://c4k1v0rvfm8tl" path="res://images/old/backgrounds/background_goth_mask.png" id="2_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://5833bmbyiogk" path="res://images/old/buttons_goth/button_continue_goth.png" id="3_rtw2f"]
 [ext_resource type="AudioStream" uid="uid://pb3r8du74xx0" path="res://music/sound_button_2.mp3" id="3_tbmy8"]
-[ext_resource type="Texture2D" uid="uid://dybpuweexpb1w" path="res://images/buttons_goth/button_new_game_goth.png" id="4_oa1go"]
-[ext_resource type="Texture2D" uid="uid://b6ovja27xhl0o" path="res://images/buttons_goth/button_settings_goth.png" id="5_tbmy8"]
-[ext_resource type="Texture2D" uid="uid://u1gw8l8fhkx4" path="res://images/buttons_goth/button_exit_goth.png" id="6_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://dybpuweexpb1w" path="res://images/old/buttons_goth/button_new_game_goth.png" id="4_oa1go"]
+[ext_resource type="Texture2D" uid="uid://b6ovja27xhl0o" path="res://images/old/buttons_goth/button_settings_goth.png" id="5_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://u1gw8l8fhkx4" path="res://images/old/buttons_goth/button_exit_goth.png" id="6_jk1qb"]
 
 [node name="MainMenu" type="Node2D" unique_id=1452238829]
 script = ExtResource("1_8ln24")

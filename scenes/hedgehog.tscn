@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://b87lpto540kp2"]
+
+[ext_resource type="Texture2D" uid="uid://cmx8csjgspofq" path="res://images/black/hedgehog_anim_1/frame0000.png" id="1_08fjg"]
+[ext_resource type="Script" uid="uid://d2rbqfbavvp0c" path="res://scenes/hedgehog.gd" id="1_smy4v"]
+[ext_resource type="Texture2D" uid="uid://trs63yem5khh" path="res://images/black/hedgehog_anim_2/frame0000.png" id="3_wivci"]
+[ext_resource type="Texture2D" uid="uid://tefnmgjn8w05" path="res://images/black/hedgehog_anim_2/frame0001.png" id="4_mi23j"]
+[ext_resource type="Texture2D" uid="uid://bqxal3brn2phs" path="res://images/black/hedgehog_anim_2/frame0002.png" id="5_gpidu"]
+[ext_resource type="Texture2D" uid="uid://b31b6sj5jvue7" path="res://images/black/hedgehog_anim_2/frame0003.png" id="6_rjq8v"]
+
+[sub_resource type="Animation" id="Animation_gvtyc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_08fjg")]
+}
+
+[sub_resource type="Animation" id="Animation_w6cr2"]
+resource_name = "idle"
+length = 1.7333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.43333334, 0.9, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_wivci"), ExtResource("4_mi23j"), ExtResource("5_gpidu"), ExtResource("6_rjq8v")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ebrdo"]
+_data = {
+&"RESET": SubResource("Animation_gvtyc"),
+&"idle": SubResource("Animation_w6cr2")
+}
+
+[node name="Hedgehog" type="Node2D" unique_id=1429729210]
+script = ExtResource("1_smy4v")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=901315285]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_08fjg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=38384991]
+libraries/ = SubResource("AnimationLibrary_ebrdo")

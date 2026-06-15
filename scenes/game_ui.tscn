@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b17ibnbtxv1ww"]
 
-[ext_resource type="Texture2D" uid="uid://cerft8ibev0lc" path="res://images/icons/icon_menu_deer.png" id="1_yubou"]
+[ext_resource type="Texture2D" uid="uid://cerft8ibev0lc" path="res://images/old/icons/icon_menu_deer.png" id="1_yubou"]
 
 [node name="GameUI" type="Node2D" unique_id=2033357070]
 

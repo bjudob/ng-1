@@ -19,7 +19,7 @@
 &"portraits": {
 "Lion": {
 "export_overrides": {
-"image": "\"res://images/characters/lion.png\""
+"image": "\"res://images/old/characters/lion.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
