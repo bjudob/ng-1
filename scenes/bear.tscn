@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cyr0l0d10418h"]
 
-[ext_resource type="Texture2D" uid="uid://ccy6k3okl3okg" path="res://images/black/bear.png" id="1_a3xf0"]
+[ext_resource type="Texture2D" uid="uid://ccy6k3okl3okg" path="res://images/bear.png" id="1_a3xf0"]
 [ext_resource type="Script" uid="uid://doxxxy14axu4r" path="res://scripts/bear.gd" id="1_h7gg4"]
-[ext_resource type="Texture2D" uid="uid://defs1nceoqdyx" path="res://images/black/bear_anim_1/frame0001.png" id="2_a5djg"]
-[ext_resource type="Texture2D" uid="uid://vtwb3qdfw0gi" path="res://images/black/bear_anim_1/frame0002.png" id="3_h7gg4"]
-[ext_resource type="Texture2D" uid="uid://bbaquy1drclu5" path="res://images/black/bear_anim_1/frame0003.png" id="4_r4uyl"]
+[ext_resource type="Texture2D" uid="uid://defs1nceoqdyx" path="res://images/bear_anim_1/frame0001.png" id="2_a5djg"]
+[ext_resource type="Texture2D" uid="uid://vtwb3qdfw0gi" path="res://images/bear_anim_1/frame0002.png" id="3_h7gg4"]
+[ext_resource type="Texture2D" uid="uid://bbaquy1drclu5" path="res://images/bear_anim_1/frame0003.png" id="4_r4uyl"]
 
 [sub_resource type="Animation" id="Animation_0f2y1"]
 length = 0.001

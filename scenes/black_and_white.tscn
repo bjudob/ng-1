@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://cd3fddw8v4y81"]
 
 [ext_resource type="PackedScene" uid="uid://cdcnpwg2gu7ab" path="res://scenes/camera.tscn" id="1_g33r8"]
-[ext_resource type="Texture2D" uid="uid://ca42yqohb0114" path="res://images/black/plants/ground_1.png" id="1_j6ete"]
+[ext_resource type="Texture2D" uid="uid://ca42yqohb0114" path="res://images/plants/ground_1.png" id="1_j6ete"]
 [ext_resource type="AudioStream" uid="uid://uefwmone33mp" path="res://music/dark_orchestra.mp3" id="1_uru6d"]
-[ext_resource type="Texture2D" uid="uid://bgrfh8dhl4fht" path="res://images/black/plants/bush_1.png" id="3_3iuu4"]
-[ext_resource type="Texture2D" uid="uid://q3gtgbqum328" path="res://images/black/plants/bush_2.png" id="3_m2agh"]
-[ext_resource type="Texture2D" uid="uid://d1sakqnh4ykrm" path="res://images/black/plants/tree_1.png" id="4_m2agh"]
-[ext_resource type="Texture2D" uid="uid://cxjcnabw4hpjc" path="res://images/black/plants/mushroom_1.png" id="5_e2x2x"]
-[ext_resource type="Texture2D" uid="uid://dm4k25vis5met" path="res://images/black/plants/tree_2.png" id="6_g33r8"]
-[ext_resource type="Texture2D" uid="uid://cac3p2ekpfkmt" path="res://images/black/plants/flower_1.png" id="7_uru6d"]
-[ext_resource type="Texture2D" uid="uid://dwfb1pbpn00il" path="res://images/black/plants/flower_2.png" id="8_un8nv"]
+[ext_resource type="Texture2D" uid="uid://bgrfh8dhl4fht" path="res://images/plants/bush_1.png" id="3_3iuu4"]
+[ext_resource type="Texture2D" uid="uid://q3gtgbqum328" path="res://images/plants/bush_2.png" id="3_m2agh"]
+[ext_resource type="Texture2D" uid="uid://d1sakqnh4ykrm" path="res://images/plants/tree_1.png" id="4_m2agh"]
+[ext_resource type="Texture2D" uid="uid://cxjcnabw4hpjc" path="res://images/plants/mushroom_1.png" id="5_e2x2x"]
+[ext_resource type="Texture2D" uid="uid://dm4k25vis5met" path="res://images/plants/tree_2.png" id="6_g33r8"]
+[ext_resource type="Texture2D" uid="uid://cac3p2ekpfkmt" path="res://images/plants/flower_1.png" id="7_uru6d"]
+[ext_resource type="Texture2D" uid="uid://dwfb1pbpn00il" path="res://images/plants/flower_2.png" id="8_un8nv"]
 [ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="9_3iuu4"]
 [ext_resource type="PackedScene" uid="uid://xnd26wbjtf1w" path="res://scenes/ghost_deer_mini.tscn" id="11_e2x2x"]
 [ext_resource type="PackedScene" uid="uid://d3rul46ijlmgl" path="res://scenes/raining_blood.tscn" id="13_un8nv"]
@@ -17,10 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://cyr0l0d10418h" path="res://scenes/bear.tscn" id="15_4kasl"]
 [ext_resource type="PackedScene" uid="uid://c7m8tx1oisgq7" path="res://scenes/bat.tscn" id="16_0d7vk"]
 [ext_resource type="PackedScene" uid="uid://b87lpto540kp2" path="res://scenes/hedgehog.tscn" id="17_gth01"]
-[ext_resource type="Texture2D" uid="uid://bddku570tew6l" path="res://images/black/plants/flower_4.png" id="18_j1xvt"]
-[ext_resource type="Texture2D" uid="uid://c8y42vwreh0br" path="res://images/black/plants/flower_3.png" id="19_hw4y7"]
+[ext_resource type="Texture2D" uid="uid://bddku570tew6l" path="res://images/plants/flower_4.png" id="18_j1xvt"]
+[ext_resource type="Texture2D" uid="uid://c8y42vwreh0br" path="res://images/plants/flower_3.png" id="19_hw4y7"]
 [ext_resource type="PackedScene" uid="uid://bdnkwc4xwov20" path="res://scenes/croco.tscn" id="20_j1xvt"]
-[ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/black/plants/tree_3.png" id="21_hw4y7"]
+[ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/plants/tree_3.png" id="21_hw4y7"]
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
@@ -138,8 +138,9 @@ position = Vector2(28, 779)
 visible = false
 position = Vector2(1478, 703)
 
-[node name="CPUParticles2D2" parent="." unique_id=1064453585 instance=ExtResource("13_un8nv")]
+[node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("13_un8nv")]
 position = Vector2(1567, -3)
+texture = null
 
 [node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("13_uru6d")]
 position = Vector2(1802, 1029)

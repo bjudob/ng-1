@@ -13,7 +13,6 @@ config_version=5
 config/name="ng1"
 run/main_scene="uid://cd3fddw8v4y81"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://images/old/icon.svg"
 
 [autoload]
 
@@ -25,9 +24,7 @@ directories/dch_directory={
 "bunny": "res://dialogic/bunny.dch",
 "lion": "res://dialogic/lion.dch"
 }
-directories/dtl_directory={
-"bunny_lion_original": "res://images/old/characters/bunny_lion_original.dtl"
-}
+directories/dtl_directory={}
 layout/style_directory={
 "": "res://dialogic/styl.tres",
 "styl": "res://dialogic/styl.tres"
