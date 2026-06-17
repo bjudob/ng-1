@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://bddku570tew6l" path="res://images/black/plants/flower_4.png" id="18_j1xvt"]
 [ext_resource type="Texture2D" uid="uid://c8y42vwreh0br" path="res://images/black/plants/flower_3.png" id="19_hw4y7"]
 [ext_resource type="PackedScene" uid="uid://bdnkwc4xwov20" path="res://scenes/croco.tscn" id="20_j1xvt"]
+[ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/black/plants/tree_3.png" id="21_hw4y7"]
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
@@ -90,6 +91,7 @@ scale = Vector2(0.28759766, 0.31396484)
 texture = ExtResource("3_3iuu4")
 
 [node name="Tree1" type="Sprite2D" parent="Foreground" unique_id=1470416274]
+visible = false
 position = Vector2(2151.0002, 523)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("4_m2agh")
@@ -115,14 +117,19 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("8_un8nv")
 
 [node name="Flower4" type="Sprite2D" parent="Foreground" unique_id=1893021521]
-position = Vector2(2419, 1064)
+position = Vector2(1759, 1072)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("18_j1xvt")
 
 [node name="Flower3" type="Sprite2D" parent="Foreground" unique_id=350209201]
-position = Vector2(103, 968)
+position = Vector2(92, 982.00006)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("19_hw4y7")
+
+[node name="Tree3" type="Sprite2D" parent="Foreground" unique_id=1137049972]
+position = Vector2(2244, 825)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("21_hw4y7")
 
 [node name="Fog" parent="." unique_id=995094908 instance=ExtResource("9_3iuu4")]
 position = Vector2(28, 779)
@@ -138,15 +145,14 @@ position = Vector2(1567, -3)
 position = Vector2(1802, 1029)
 
 [node name="Bear" parent="." unique_id=4868764 instance=ExtResource("15_4kasl")]
-position = Vector2(1394, 922)
+position = Vector2(1440, 956)
 
 [node name="Bat" parent="." unique_id=194123093 instance=ExtResource("16_0d7vk")]
 position = Vector2(1246, 217)
 
 [node name="Hedgehog" parent="." unique_id=1429729210 instance=ExtResource("17_gth01")]
-visible = false
-position = Vector2(1883, 1058)
+position = Vector2(2429, 1066)
 
 [node name="Croco" parent="." unique_id=2104192547 instance=ExtResource("20_j1xvt")]
-position = Vector2(1033, 959)
+position = Vector2(1060, 965)
 scale = Vector2(-1, 1)
