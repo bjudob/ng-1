@@ -11,16 +11,25 @@
 [ext_resource type="Texture2D" uid="uid://cac3p2ekpfkmt" path="res://images/plants/flower_1.png" id="7_uru6d"]
 [ext_resource type="Texture2D" uid="uid://dwfb1pbpn00il" path="res://images/plants/flower_2.png" id="8_un8nv"]
 [ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="9_3iuu4"]
-[ext_resource type="PackedScene" uid="uid://xnd26wbjtf1w" path="res://scenes/ghost_deer_mini.tscn" id="11_e2x2x"]
 [ext_resource type="PackedScene" uid="uid://d3rul46ijlmgl" path="res://scenes/raining_blood.tscn" id="13_un8nv"]
 [ext_resource type="PackedScene" uid="uid://bfs0amee2tltg" path="res://scenes/bunny.tscn" id="13_uru6d"]
 [ext_resource type="PackedScene" uid="uid://cyr0l0d10418h" path="res://scenes/bear.tscn" id="15_4kasl"]
 [ext_resource type="PackedScene" uid="uid://c7m8tx1oisgq7" path="res://scenes/bat.tscn" id="16_0d7vk"]
-[ext_resource type="PackedScene" uid="uid://b87lpto540kp2" path="res://scenes/hedgehog.tscn" id="17_gth01"]
 [ext_resource type="Texture2D" uid="uid://bddku570tew6l" path="res://images/plants/flower_4.png" id="18_j1xvt"]
 [ext_resource type="Texture2D" uid="uid://c8y42vwreh0br" path="res://images/plants/flower_3.png" id="19_hw4y7"]
 [ext_resource type="PackedScene" uid="uid://bdnkwc4xwov20" path="res://scenes/croco.tscn" id="20_j1xvt"]
+[ext_resource type="PackedScene" uid="uid://bjbthxh6cqi7" path="res://scenes/player.tscn" id="21_2bjcw"]
+[ext_resource type="Texture2D" uid="uid://bh2cs11i25gw3" path="res://images/plants/rock.png" id="21_bd26w"]
 [ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/plants/tree_3.png" id="21_hw4y7"]
+[ext_resource type="Texture2D" uid="uid://dbthq2qqw6bc1" path="res://images/squirrel.png" id="22_2bjcw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw4y7"]
+size = Vector2(2062.0735, 2138.6558)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hw4y7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4girb"]
+radius = 156.04166
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
@@ -36,11 +45,6 @@ modulate = Color(1, 1, 1, 0.11764706)
 [node name="Background" type="Node2D" parent="." unique_id=1705253227]
 modulate = Color(1, 1, 1, 0.27450982)
 
-[node name="Bush1" type="Sprite2D" parent="Background" unique_id=27824773]
-position = Vector2(1935, 901)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("3_3iuu4")
-
 [node name="Tree1" type="Sprite2D" parent="Background" unique_id=1146138380]
 position = Vector2(2332, 472)
 texture = ExtResource("4_m2agh")
@@ -49,18 +53,32 @@ texture = ExtResource("4_m2agh")
 position = Vector2(1285, 567)
 texture = ExtResource("4_m2agh")
 
+[node name="Tree3" type="Sprite2D" parent="Background" unique_id=1021932363]
+position = Vector2(504, 518)
+texture = ExtResource("4_m2agh")
+
+[node name="Tree4" type="Sprite2D" parent="Background" unique_id=1012790455]
+position = Vector2(2974, 472)
+texture = ExtResource("4_m2agh")
+
+[node name="Bush1" type="Sprite2D" parent="Background" unique_id=27824773]
+position = Vector2(1935, 901)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_3iuu4")
+
+[node name="Bush2" type="Sprite2D" parent="Background" unique_id=1812140654]
+position = Vector2(2369, 967)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_m2agh")
+
 [node name="Bush3" type="Sprite2D" parent="Background" unique_id=467316798]
 position = Vector2(1075, 867)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_m2agh")
 
-[node name="Tree3" type="Sprite2D" parent="Background" unique_id=1021932363]
-position = Vector2(504, 518)
-texture = ExtResource("4_m2agh")
-
-[node name="Bush2" type="Sprite2D" parent="Background" unique_id=1812140654]
-position = Vector2(2369, 967)
-scale = Vector2(0.2, 0.2)
+[node name="Bush4" type="Sprite2D" parent="Background" unique_id=1678608526]
+position = Vector2(3079, 884)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_m2agh")
 
 [node name="Flower1" type="Sprite2D" parent="Background" unique_id=1007271304]
@@ -78,12 +96,32 @@ position = Vector2(1454, 1149.0001)
 scale = Vector2(0.03, 0.03)
 texture = ExtResource("7_uru6d")
 
-[node name="Foreground" type="Node2D" parent="." unique_id=1027020053]
-
-[node name="Ground1" type="Sprite2D" parent="Foreground" unique_id=1881126492]
+[node name="Ground" type="Sprite2D" parent="." unique_id=1881126492]
 position = Vector2(1297.5, 1427.25)
-scale = Vector2(1.3500977, 0.2512207)
+scale = Vector2(3.7500966, 0.2512207)
 texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Ground" unique_id=266455283]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/StaticBody2D" unique_id=1942462328]
+position = Vector2(3.3328857, 126.38428)
+scale = Vector2(0.9999999, 1)
+shape = SubResource("RectangleShape2D_hw4y7")
+
+[node name="Ground2" type="Sprite2D" parent="." unique_id=1103126233]
+position = Vector2(6755, 1263)
+rotation = -0.40410507
+scale = Vector2(3, 1)
+texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Ground2" unique_id=905825266]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2/StaticBody2D" unique_id=376304184]
+position = Vector2(3.332882, 88.116455)
+scale = Vector2(0.9753886, 1.0184436)
+shape = SubResource("RectangleShape2D_hw4y7")
+
+[node name="Foreground" type="Node2D" parent="." unique_id=1027020053]
 
 [node name="Bush1" type="Sprite2D" parent="Foreground" unique_id=721542788]
 position = Vector2(336.00006, 914)
@@ -91,23 +129,27 @@ scale = Vector2(0.28759766, 0.31396484)
 texture = ExtResource("3_3iuu4")
 
 [node name="Tree1" type="Sprite2D" parent="Foreground" unique_id=1470416274]
-visible = false
 position = Vector2(2151.0002, 523)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("4_m2agh")
-
-[node name="Mushroom1" type="Sprite2D" parent="Foreground" unique_id=689862407]
-position = Vector2(1947, 1075)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("5_e2x2x")
 
 [node name="Tree2" type="Sprite2D" parent="Foreground" unique_id=1427992644]
 position = Vector2(603, 519.00006)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("6_g33r8")
 
+[node name="Tree3" type="Sprite2D" parent="Foreground" unique_id=1137049972]
+position = Vector2(3441, 809)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("21_hw4y7")
+
+[node name="Mushroom1" type="Sprite2D" parent="Foreground" unique_id=689862407]
+position = Vector2(1947, 1075)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_e2x2x")
+
 [node name="Flower1" type="Sprite2D" parent="Foreground" unique_id=405117865]
-position = Vector2(2251, 1112)
+position = Vector2(2332, 1094)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("7_uru6d")
 
@@ -117,7 +159,7 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("8_un8nv")
 
 [node name="Flower4" type="Sprite2D" parent="Foreground" unique_id=1893021521]
-position = Vector2(1759, 1072)
+position = Vector2(3877, 1061)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("18_j1xvt")
 
@@ -126,34 +168,43 @@ position = Vector2(92, 982.00006)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("19_hw4y7")
 
-[node name="Tree3" type="Sprite2D" parent="Foreground" unique_id=1137049972]
-position = Vector2(2244, 825)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("21_hw4y7")
-
 [node name="Fog" parent="." unique_id=995094908 instance=ExtResource("9_3iuu4")]
 position = Vector2(28, 779)
-
-[node name="GhostDeer" parent="." unique_id=1454144664 instance=ExtResource("11_e2x2x")]
-visible = false
-position = Vector2(1478, 703)
 
 [node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("13_un8nv")]
 position = Vector2(1567, -3)
 texture = null
 
 [node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("13_uru6d")]
-position = Vector2(1802, 1029)
+position = Vector2(1708, 1027)
 
 [node name="Bear" parent="." unique_id=4868764 instance=ExtResource("15_4kasl")]
-position = Vector2(1440, 956)
+position = Vector2(1099, 930)
 
 [node name="Bat" parent="." unique_id=194123093 instance=ExtResource("16_0d7vk")]
 position = Vector2(1246, 217)
 
-[node name="Hedgehog" parent="." unique_id=1429729210 instance=ExtResource("17_gth01")]
-position = Vector2(2429, 1066)
-
 [node name="Croco" parent="." unique_id=2104192547 instance=ExtResource("20_j1xvt")]
-position = Vector2(1060, 965)
-scale = Vector2(-1, 1)
+position = Vector2(2925, 968)
+
+[node name="Player" parent="." unique_id=2088576898 instance=ExtResource("21_2bjcw")]
+position = Vector2(3363, 1065)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1636434130]
+position = Vector2(4908, 808)
+mass = 0.001
+physics_material_override = SubResource("PhysicsMaterial_hw4y7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1209378789]
+position = Vector2(1.9998369, 2.0980835e-05)
+shape = SubResource("CircleShape2D_4girb")
+disabled = true
+
+[node name="Rock" type="Sprite2D" parent="RigidBody2D" unique_id=754075760]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("21_bd26w")
+
+[node name="Squirrel" type="Sprite2D" parent="." unique_id=1355375160]
+position = Vector2(3448, 474)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_2bjcw")

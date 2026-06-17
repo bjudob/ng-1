@@ -1,6 +1,6 @@
 extends Camera2D
 
-@onready var ghostDeer = $"../GhostDeer"
+@onready var ghostDeer = $"../Player"
 const SPEED = 2
 const DISTANCE_TO_TRIGGER_MOVE = 500
 
