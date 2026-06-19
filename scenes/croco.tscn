@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" uid="uid://d243t5i7wi1va" path="res://scripts/croco.gd" id="1_hv3m4"]
 [ext_resource type="Texture2D" uid="uid://ceva50timvioa" path="res://images/croco.png" id="1_qup7g"]
-[ext_resource type="Texture2D" uid="uid://bk4cw8uh4sjdy" path="res://images/croco_anim_1/frame0001.png" id="3_vx0kg"]
-[ext_resource type="Texture2D" uid="uid://b607cnoqt5h0q" path="res://images/croco_anim_1/frame0002.png" id="4_efbgp"]
-[ext_resource type="Texture2D" uid="uid://hurq48uop48s" path="res://images/croco_anim_1/frame0003.png" id="5_xoe22"]
-[ext_resource type="Texture2D" uid="uid://1fd70aej3f1w" path="res://images/croco_anim_1/frame0004.png" id="6_pkf1g"]
-[ext_resource type="Texture2D" uid="uid://bbv6rb0o1ij2q" path="res://images/croco_anim_1/frame0005.png" id="7_f8hm1"]
+[ext_resource type="Texture2D" uid="uid://bk4cw8uh4sjdy" path="res://images/anims/croco_idle/frame0001.png" id="3_vx0kg"]
+[ext_resource type="Texture2D" uid="uid://b607cnoqt5h0q" path="res://images/anims/croco_idle/frame0002.png" id="4_efbgp"]
+[ext_resource type="Texture2D" uid="uid://hurq48uop48s" path="res://images/anims/croco_idle/frame0003.png" id="5_xoe22"]
+[ext_resource type="Texture2D" uid="uid://1fd70aej3f1w" path="res://images/anims/croco_idle/frame0004.png" id="6_pkf1g"]
+[ext_resource type="Texture2D" uid="uid://bbv6rb0o1ij2q" path="res://images/anims/croco_idle/frame0005.png" id="7_f8hm1"]
+[ext_resource type="Texture2D" uid="uid://cejel3crd48jf" path="res://images/items/pope_hat_outline.png" id="8_efbgp"]
 
 [sub_resource type="Animation" id="Animation_rrwjc"]
 length = 0.001
@@ -52,6 +53,12 @@ script = ExtResource("1_hv3m4")
 [node name="Sprite" type="Sprite2D" parent="." unique_id=44166]
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_qup7g")
+flip_h = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1001704599]
 libraries/ = SubResource("AnimationLibrary_5sxy7")
+
+[node name="PopeHat" type="Sprite2D" parent="." unique_id=1108063086]
+position = Vector2(-38, -291)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_efbgp")

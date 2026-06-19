@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ng1"
-run/main_scene="uid://cd3fddw8v4y81"
+run/main_scene="uid://dn4pdpp6bu7e3"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [autoload]

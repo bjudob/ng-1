@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b87lpto540kp2"]
 
-[ext_resource type="Texture2D" uid="uid://cmx8csjgspofq" path="res://images/hedgehog_anim_1/frame0000.png" id="1_08fjg"]
+[ext_resource type="Texture2D" path="res://images/anims/hedgehog_anim_1/frame0000.png" id="1_08fjg"]
 [ext_resource type="Script" uid="uid://d2rbqfbavvp0c" path="res://scripts/hedgehog.gd" id="1_smy4v"]
-[ext_resource type="Texture2D" uid="uid://trs63yem5khh" path="res://images/hedgehog_anim_2/frame0000.png" id="3_wivci"]
-[ext_resource type="Texture2D" uid="uid://tefnmgjn8w05" path="res://images/hedgehog_anim_2/frame0001.png" id="4_mi23j"]
-[ext_resource type="Texture2D" uid="uid://bqxal3brn2phs" path="res://images/hedgehog_anim_2/frame0002.png" id="5_gpidu"]
-[ext_resource type="Texture2D" uid="uid://b31b6sj5jvue7" path="res://images/hedgehog_anim_2/frame0003.png" id="6_rjq8v"]
+[ext_resource type="Texture2D" uid="uid://trs63yem5khh" path="res://images/anims/hedgehog_idle/frame0000.png" id="3_wivci"]
+[ext_resource type="Texture2D" uid="uid://tefnmgjn8w05" path="res://images/anims/hedgehog_idle/frame0001.png" id="4_mi23j"]
+[ext_resource type="Texture2D" uid="uid://bqxal3brn2phs" path="res://images/anims/hedgehog_idle/frame0002.png" id="5_gpidu"]
+[ext_resource type="Texture2D" uid="uid://b31b6sj5jvue7" path="res://images/anims/hedgehog_idle/frame0003.png" id="6_rjq8v"]
 
 [sub_resource type="Animation" id="Animation_gvtyc"]
 length = 0.001
