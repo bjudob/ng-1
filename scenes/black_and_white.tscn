@@ -22,9 +22,10 @@
 [ext_resource type="PackedScene" uid="uid://bdnkwc4xwov20" path="res://scenes/croco.tscn" id="20_j1xvt"]
 [ext_resource type="PackedScene" uid="uid://bjbthxh6cqi7" path="res://scenes/player.tscn" id="21_2bjcw"]
 [ext_resource type="PackedScene" uid="uid://bkudb4dy6uohv" path="res://scenes/squirrel.tscn" id="21_4girb"]
-[ext_resource type="Texture2D" uid="uid://bh2cs11i25gw3" path="res://images/plants/rock.png" id="21_bd26w"]
 [ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/plants/tree_3.png" id="21_hw4y7"]
+[ext_resource type="PackedScene" uid="uid://b5yhibgj5vt6y" path="res://scenes/giraffe.tscn" id="25_cccuu"]
 [ext_resource type="Texture2D" uid="uid://c7wgix48twfhp" path="res://images/buildings/temple.png" id="25_ivlcv"]
+[ext_resource type="Texture2D" uid="uid://6omd4twn73aq" path="res://images/snail.png" id="27_8loky"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ivlcv"]
 shader = ExtResource("3_bd26w")
@@ -40,11 +41,6 @@ shader_parameter/target_color = Color(0.5, 0.5, 0.5, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hw4y7"]
 size = Vector2(2062.0735, 2138.6558)
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hw4y7"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_4girb"]
-radius = 156.04166
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
@@ -100,6 +96,21 @@ material = ExtResource("4_4girb")
 position = Vector2(-651, 261)
 texture = ExtResource("6_g33r8")
 
+[node name="Tree7" type="Sprite2D" parent="Parallax2D/Background" unique_id=1416978297]
+material = ExtResource("4_4girb")
+position = Vector2(3813, 455)
+texture = ExtResource("4_m2agh")
+
+[node name="Tree8" type="Sprite2D" parent="Parallax2D/Background" unique_id=1148368190]
+material = ExtResource("4_4girb")
+position = Vector2(4612, 392)
+texture = ExtResource("4_m2agh")
+
+[node name="Tree9" type="Sprite2D" parent="Parallax2D/Background" unique_id=572735055]
+material = ExtResource("4_4girb")
+position = Vector2(5183, 405)
+texture = ExtResource("4_m2agh")
+
 [node name="Bush1" type="Sprite2D" parent="Parallax2D/Background" unique_id=27824773]
 material = ExtResource("4_4girb")
 position = Vector2(1935, 901)
@@ -130,9 +141,28 @@ position = Vector2(-1649, 971.00006)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_m2agh")
 
-[node name="Bush6" type="Sprite2D" parent="Parallax2D/Background/Bush5" unique_id=362934309]
+[node name="Bush6" type="Sprite2D" parent="Parallax2D/Background" unique_id=1242809435]
 material = ExtResource("4_4girb")
-position = Vector2(5749.9995, 30.00003)
+position = Vector2(4807, 886)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_3iuu4")
+
+[node name="Bush8" type="Sprite2D" parent="Parallax2D/Background" unique_id=1228702380]
+material = ExtResource("4_4girb")
+position = Vector2(5334, 881)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_3iuu4")
+
+[node name="Bush9" type="Sprite2D" parent="Parallax2D/Background" unique_id=972771186]
+material = ExtResource("4_4girb")
+position = Vector2(4994, 727)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_3iuu4")
+
+[node name="Bush7" type="Sprite2D" parent="Parallax2D/Background" unique_id=362934309]
+material = ExtResource("4_4girb")
+position = Vector2(-499.00012, 977.00006)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_3iuu4")
 
 [node name="Flower1" type="Sprite2D" parent="Parallax2D/Background" unique_id=1007271304]
@@ -173,13 +203,25 @@ texture = ExtResource("18_j1xvt")
 
 [node name="Flower7" type="Sprite2D" parent="Parallax2D/Background" unique_id=735498692]
 material = ExtResource("4_4girb")
-position = Vector2(-1246, 1131)
+position = Vector2(4153, 1095)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("18_j1xvt")
 
+[node name="Flower8" type="Sprite2D" parent="Parallax2D/Background" unique_id=1114159572]
+material = ExtResource("4_4girb")
+position = Vector2(-1378, 1110)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("18_j1xvt")
+
+[node name="Flower9" type="Sprite2D" parent="Parallax2D/Background" unique_id=1521246471]
+material = ExtResource("4_4girb")
+position = Vector2(4015.9998, 1119)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("7_uru6d")
+
 [node name="Ground" type="Sprite2D" parent="." unique_id=1881126492]
 position = Vector2(1297.5, 1427.25)
-scale = Vector2(3.7500966, 0.2512207)
+scale = Vector2(7, 0.251)
 texture = ExtResource("1_j6ete")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Ground" unique_id=266455283]
@@ -187,19 +229,6 @@ texture = ExtResource("1_j6ete")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/StaticBody2D" unique_id=1942462328]
 position = Vector2(3.3328857, 126.38428)
 scale = Vector2(0.9999999, 1)
-shape = SubResource("RectangleShape2D_hw4y7")
-
-[node name="Ground2" type="Sprite2D" parent="." unique_id=1103126233]
-position = Vector2(6755, 1263)
-rotation = -0.40410507
-scale = Vector2(3, 1)
-texture = ExtResource("1_j6ete")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Ground2" unique_id=905825266]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2/StaticBody2D" unique_id=376304184]
-position = Vector2(3.332882, 88.116455)
-scale = Vector2(0.9753886, 1.0184436)
 shape = SubResource("RectangleShape2D_hw4y7")
 
 [node name="Foreground" type="Node2D" parent="." unique_id=1027020053]
@@ -223,6 +252,10 @@ texture = ExtResource("6_g33r8")
 position = Vector2(3441, 809)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("21_hw4y7")
+
+[node name="Tree4" type="Sprite2D" parent="Foreground" unique_id=1291082031]
+position = Vector2(4437, 406)
+texture = ExtResource("6_g33r8")
 
 [node name="Mushroom1" type="Sprite2D" parent="Foreground" unique_id=689862407]
 position = Vector2(1947, 1075)
@@ -256,7 +289,7 @@ position = Vector2(1567, -3)
 texture = null
 
 [node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("13_uru6d")]
-position = Vector2(1708, 1027)
+position = Vector2(1705, 1034)
 
 [node name="Bear" parent="." unique_id=4868764 instance=ExtResource("15_4kasl")]
 position = Vector2(1099, 930)
@@ -269,27 +302,21 @@ position = Vector2(-219, 956)
 
 [node name="Player" parent="." unique_id=2088576898 instance=ExtResource("21_2bjcw")]
 z_index = 10
-position = Vector2(3363, 1065)
-
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1636434130]
-position = Vector2(4908, 808)
-mass = 0.001
-physics_material_override = SubResource("PhysicsMaterial_hw4y7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1209378789]
-position = Vector2(1.9998369, 2.0980835e-05)
-shape = SubResource("CircleShape2D_4girb")
-disabled = true
-
-[node name="Rock" type="Sprite2D" parent="RigidBody2D" unique_id=754075760]
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("21_bd26w")
+position = Vector2(863, 1079)
 
 [node name="Squirrel" parent="." unique_id=2007977447 instance=ExtResource("21_4girb")]
 position = Vector2(3429, 509)
+
+[node name="Giraffe" parent="." unique_id=1230117631 instance=ExtResource("25_cccuu")]
+position = Vector2(5109, 599)
 
 [node name="Temple" type="Sprite2D" parent="." unique_id=963831218]
 position = Vector2(-1039.0001, 670.00006)
 scale = Vector2(0.65, 0.65)
 texture = ExtResource("25_ivlcv")
 flip_h = true
+
+[node name="Snail" type="Sprite2D" parent="." unique_id=1020030286]
+position = Vector2(2658, 1080)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("27_8loky")
