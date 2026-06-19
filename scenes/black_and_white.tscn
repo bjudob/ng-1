@@ -25,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/plants/tree_3.png" id="21_hw4y7"]
 [ext_resource type="PackedScene" uid="uid://b5yhibgj5vt6y" path="res://scenes/giraffe.tscn" id="25_cccuu"]
 [ext_resource type="Texture2D" uid="uid://c7wgix48twfhp" path="res://images/buildings/temple.png" id="25_ivlcv"]
-[ext_resource type="Texture2D" uid="uid://6omd4twn73aq" path="res://images/snail.png" id="27_8loky"]
+[ext_resource type="PackedScene" uid="uid://clldexxdu30gk" path="res://scenes/snail.tscn" id="26_cccuu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ivlcv"]
 shader = ExtResource("3_bd26w")
@@ -316,7 +316,5 @@ scale = Vector2(0.65, 0.65)
 texture = ExtResource("25_ivlcv")
 flip_h = true
 
-[node name="Snail" type="Sprite2D" parent="." unique_id=1020030286]
-position = Vector2(2658, 1080)
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("27_8loky")
+[node name="Snail" parent="." unique_id=1885918394 instance=ExtResource("26_cccuu")]
+position = Vector2(2725, 1076)
