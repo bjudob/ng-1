@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://cdcnpwg2gu7ab" path="res://scenes/camera.tscn" id="1_g33r8"]
 [ext_resource type="Texture2D" uid="uid://ca42yqohb0114" path="res://images/plants/ground_1.png" id="1_j6ete"]
 [ext_resource type="AudioStream" uid="uid://uefwmone33mp" path="res://music/dark_orchestra.mp3" id="1_uru6d"]
-[ext_resource type="Texture2D" uid="uid://bihq4isywm2ye" path="res://images/mountain.png" id="2_2bjcw"]
 [ext_resource type="Texture2D" uid="uid://bgrfh8dhl4fht" path="res://images/plants/bush_1.png" id="3_3iuu4"]
 [ext_resource type="Shader" uid="uid://ceguoyfwp33jd" path="res://shaders/background.gdshader" id="3_bd26w"]
 [ext_resource type="Texture2D" uid="uid://q3gtgbqum328" path="res://images/plants/bush_2.png" id="3_m2agh"]
@@ -27,14 +26,6 @@
 [ext_resource type="Texture2D" uid="uid://c7wgix48twfhp" path="res://images/buildings/temple.png" id="25_ivlcv"]
 [ext_resource type="PackedScene" uid="uid://clldexxdu30gk" path="res://scenes/snail.tscn" id="26_cccuu"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ivlcv"]
-shader = ExtResource("3_bd26w")
-shader_parameter/target_color = Color(0.40146014, 0.40146014, 0.40146014, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_4girb"]
-shader = ExtResource("3_bd26w")
-shader_parameter/target_color = Color(0, 0, 0, 1)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bd26w"]
 shader = ExtResource("3_bd26w")
 shader_parameter/target_color = Color(0.5, 0.5, 0.5, 1)
@@ -46,19 +37,6 @@ size = Vector2(2062.0735, 2138.6558)
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=2119095027]
 stream = ExtResource("1_uru6d")
-
-[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=330101046]
-scroll_scale = Vector2(0.2, 0.2)
-
-[node name="BackBackground" type="Node2D" parent="Parallax2D2" unique_id=753748220]
-material = SubResource("ShaderMaterial_ivlcv")
-
-[node name="Mountain" type="Sprite2D" parent="Parallax2D2/BackBackground" unique_id=4323292]
-visible = false
-modulate = Color(1, 1, 1, 0.208)
-material = SubResource("ShaderMaterial_4girb")
-position = Vector2(1524, 718)
-texture = ExtResource("2_2bjcw")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1776308443]
 scroll_scale = Vector2(0.9, 0.9)
@@ -282,6 +260,12 @@ position = Vector2(92, 982.00006)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("19_hw4y7")
 
+[node name="Temple" type="Sprite2D" parent="Foreground" unique_id=963831218]
+position = Vector2(-1039.0001, 670.00006)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("25_ivlcv")
+flip_h = true
+
 [node name="Camera" parent="." unique_id=2001042165 instance=ExtResource("1_g33r8")]
 
 [node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("13_un8nv")]
@@ -309,12 +293,6 @@ position = Vector2(3429, 509)
 
 [node name="Giraffe" parent="." unique_id=1230117631 instance=ExtResource("25_cccuu")]
 position = Vector2(5109, 599)
-
-[node name="Temple" type="Sprite2D" parent="." unique_id=963831218]
-position = Vector2(-1039.0001, 670.00006)
-scale = Vector2(0.65, 0.65)
-texture = ExtResource("25_ivlcv")
-flip_h = true
 
 [node name="Snail" parent="." unique_id=1885918394 instance=ExtResource("26_cccuu")]
 position = Vector2(2725, 1076)
