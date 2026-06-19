@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://c7m8tx1oisgq7"]
 
 [ext_resource type="Script" uid="uid://cisfm2tidi7ce" path="res://scripts/bat.gd" id="1_cnldk"]
-[ext_resource type="Texture2D" uid="uid://ctvo285elmnd8" path="res://images/black/bat_2.png" id="1_uhqni"]
-[ext_resource type="Texture2D" uid="uid://do03u3al8gkei" path="res://images/black/bat_anim_1/frame0001.png" id="3_8qtcx"]
-[ext_resource type="Texture2D" uid="uid://uj7kfo8gov2c" path="res://images/black/bat_anim_1/frame0002.png" id="4_x4bhu"]
-[ext_resource type="Texture2D" uid="uid://l2jabgyufc0y" path="res://images/black/bat_anim_1/frame0003.png" id="5_k0o7o"]
-[ext_resource type="Texture2D" uid="uid://dle40jon4n4pe" path="res://images/black/bat_anim_1/frame0004.png" id="6_67y1s"]
-[ext_resource type="Texture2D" uid="uid://yctdvskvw3x1" path="res://images/black/bat_anim_1/frame0005.png" id="7_p5otw"]
+[ext_resource type="Texture2D" uid="uid://ctvo285elmnd8" path="res://images/bat_2.png" id="1_uhqni"]
+[ext_resource type="Texture2D" uid="uid://do03u3al8gkei" path="res://images/anims/bat_idle/frame0001.png" id="3_8qtcx"]
+[ext_resource type="Texture2D" uid="uid://uj7kfo8gov2c" path="res://images/anims/bat_idle/frame0002.png" id="4_x4bhu"]
+[ext_resource type="Texture2D" uid="uid://l2jabgyufc0y" path="res://images/anims/bat_idle/frame0003.png" id="5_k0o7o"]
+[ext_resource type="Texture2D" uid="uid://dle40jon4n4pe" path="res://images/anims/bat_idle/frame0004.png" id="6_67y1s"]
+[ext_resource type="Texture2D" uid="uid://yctdvskvw3x1" path="res://images/anims/bat_idle/frame0005.png" id="7_p5otw"]
 
 [sub_resource type="Animation" id="Animation_vjjhm"]
 length = 0.001

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://d3rul46ijlmgl"]
 
-[ext_resource type="Texture2D" uid="uid://cmgxqw6u72fyh" path="res://images/old/objects/raindrop_2.png" id="1_illj7"]
+[ext_resource type="Texture2D" uid="uid://cjtsouccwqrrg" path="res://images/raindrop.png" id="1_illj7"]
 
-[node name="CPUParticles2D" type="CPUParticles2D" unique_id=1064453585]
+[node name="RainingBlood" type="CPUParticles2D" unique_id=1064453585]
 modulate = Color(0.45490196, 0.21568628, 0.21176471, 1)
 amount = 2000
 texture = ExtResource("1_illj7")

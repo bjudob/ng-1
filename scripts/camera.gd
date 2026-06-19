@@ -1,6 +1,6 @@
 extends Camera2D
 
-@onready var ghostDeer = $"../GhostDeer"
+@onready var ghostDeer = $"../Player"
 const SPEED = 2
 const DISTANCE_TO_TRIGGER_MOVE = 500
 
@@ -15,7 +15,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var target = ghostDeer.position
 	var fixedOnDeer = target - halfScreen
 	var direction = (fixedOnDeer - position).normalized()

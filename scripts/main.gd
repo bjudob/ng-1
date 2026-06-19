@@ -12,7 +12,7 @@ enum Level {
 
 @onready var levelToScene = {
 	Level.MAIN_MENU: $MainMenu,
-	Level.Map: $Map,
+	Level.Map: $BlackAndWhite,
 }
 
 func _ready() -> void:

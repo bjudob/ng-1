@@ -28,25 +28,25 @@ func _on_continue_mouse_exited() -> void:
 
 func _on_new_game_mouse_entered() -> void:
 	hoverSound.play()
-	newGameButton.texture = load("res://images/buttons_goth/button_new_game_goth_hover.png")
+	newGameButton.texture = load("res://images/buttons/button_play_hover.png")
 
 
 func _on_new_game_mouse_exited() -> void:
-	newGameButton.texture =  load("res://images/buttons_goth/button_new_game_goth.png")
+	newGameButton.texture =  load("res://images/buttons/button_play.png")
 
 
 func _on_settings_mouse_entered() -> void:
 	hoverSound.play()
-	settingsButton.texture =  load("res://images/buttons_goth/button_settings_goth_hover.png")
+	settingsButton.texture =  load("res://images/buttons/button_settings_hover.png")
 
 
 func _on_settings_mouse_exited() -> void:
-	settingsButton.texture =  load("res://images/buttons_goth/button_settings_goth.png")
+	settingsButton.texture =  load("res://images/buttons/button_settings.png")
 
 
 func _on_exit_mouse_entered() -> void:
 	hoverSound.play()
-	exitButton.texture =  load("res://images/buttons_goth/button_exit_goth_hover.png")
+	exitButton.texture =  load("res://images/buttons/button_exit_hover.png")
 
 func _on_exit_mouse_exited() -> void:
-	exitButton.texture =  load("res://images/buttons_goth/button_exit_goth.png")
+	exitButton.texture =  load("res://images/buttons/button_exit.png")

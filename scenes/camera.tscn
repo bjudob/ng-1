@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://cdcnpwg2gu7ab"]
 
 [ext_resource type="Script" uid="uid://hih5l6oclw7c" path="res://scripts/camera.gd" id="1_cvpoc"]
+[ext_resource type="PackedScene" uid="uid://6wws7t6r3wec" path="res://scenes/fog.tscn" id="2_kod1s"]
 
 [node name="Camera" type="Camera2D" unique_id=2001042165]
 anchor_mode = 0
 script = ExtResource("1_cvpoc")
+
+[node name="Fog" parent="." unique_id=995094908 instance=ExtResource("2_kod1s")]
+position = Vector2(1269, 623)
