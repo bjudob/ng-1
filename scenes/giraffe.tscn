@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b5yhibgj5vt6y"]
 
-[ext_resource type="Script" uid="uid://bx18x3shh81f8" path="res://scenes/giraffe.gd" id="1_4hl5y"]
+[ext_resource type="Script" uid="uid://bx18x3shh81f8" path="res://scripts/giraffe.gd" id="1_4hl5y"]
 [ext_resource type="Texture2D" uid="uid://0hsgw0d8d5kl" path="res://images/anims/giraffe_idle/frame0000.png" id="1_b8773"]
 [ext_resource type="Texture2D" uid="uid://byp5dp6mse2qm" path="res://images/anims/giraffe_idle/frame0001.png" id="3_4dv4s"]
 [ext_resource type="Texture2D" uid="uid://bipv3lc5tm7f0" path="res://images/anims/giraffe_idle/frame0002.png" id="4_qcy6g"]

@@ -50,6 +50,7 @@ size = Vector2(1762, 1351)
 [node name="Bear" type="Node2D" unique_id=4868764]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_h7gg4")
+current_dialog = "bear_welcome"
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=277291869]
 texture = ExtResource("1_a3xf0")
@@ -63,5 +64,3 @@ libraries/ = SubResource("AnimationLibrary_x34g0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2000090059]
 position = Vector2(332, -72.5)
 shape = SubResource("RectangleShape2D_h7gg4")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

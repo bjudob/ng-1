@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkudb4dy6uohv"]
 
 [ext_resource type="Texture2D" uid="uid://dbthq2qqw6bc1" path="res://images/squirrel.png" id="1_2marj"]
-[ext_resource type="Script" uid="uid://ctr3q1w3gq32d" path="res://scenes/squirrel.gd" id="1_pjnre"]
+[ext_resource type="Script" uid="uid://ctr3q1w3gq32d" path="res://scripts/squirrel.gd" id="1_pjnre"]
 [ext_resource type="Texture2D" uid="uid://olb08at8t6wh" path="res://images/anims/squirrel_anim_1/frame0000.png" id="2_lbcbw"]
 [ext_resource type="Texture2D" uid="uid://d3hx4h3tv37ot" path="res://images/anims/squirrel_anim_1/frame0001.png" id="3_pjnre"]
 [ext_resource type="Texture2D" uid="uid://qigacwjh8vhm" path="res://images/anims/squirrel_anim_1/frame0002.png" id="4_be7vh"]
