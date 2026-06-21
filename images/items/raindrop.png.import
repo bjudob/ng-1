@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lqtk3rqd2pdh"
-path="res://.godot/imported/bunny.png-8582890a6f6868dd8fff8b7cc2fd125c.ctex"
+uid="uid://cjtsouccwqrrg"
+path="res://.godot/imported/raindrop.png-73b5269b60c115009a34a12b821c0886.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/bunny.png"
-dest_files=["res://.godot/imported/bunny.png-8582890a6f6868dd8fff8b7cc2fd125c.ctex"]
+source_file="res://images/items/raindrop.png"
+dest_files=["res://.godot/imported/raindrop.png-73b5269b60c115009a34a12b821c0886.ctex"]
 
 [params]
 

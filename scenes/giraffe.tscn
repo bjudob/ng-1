@@ -46,6 +46,9 @@ _data = {
 &"idle": SubResource("Animation_c81j7")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4dv4s"]
+size = Vector2(2490, 3616.6665)
+
 [node name="Giraffe" type="Node2D" unique_id=1230117631]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_4hl5y")
@@ -55,3 +58,9 @@ texture = ExtResource("1_b8773")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=39368584]
 libraries/ = SubResource("AnimationLibrary_dpn3h")
+
+[node name="TalkArea" type="Area2D" parent="." unique_id=1436197259]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalkArea" unique_id=673450210]
+position = Vector2(-431.66666, 228.33333)
+shape = SubResource("RectangleShape2D_4dv4s")

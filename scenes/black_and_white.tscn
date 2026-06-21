@@ -274,6 +274,7 @@ texture = null
 
 [node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("13_uru6d")]
 position = Vector2(1705, 1034)
+current_dialog = "bunny_welcome"
 
 [node name="Bear" parent="." unique_id=4868764 instance=ExtResource("15_4kasl")]
 position = Vector2(1099, 930)
@@ -296,3 +297,12 @@ position = Vector2(5109, 599)
 
 [node name="Snail" parent="." unique_id=1885918394 instance=ExtResource("26_cccuu")]
 position = Vector2(2725, 1076)
+
+[node name="Ground1" type="Sprite2D" parent="." unique_id=1628416770]
+position = Vector2(9757, 2193)
+texture = ExtResource("1_j6ete")
+
+[node name="Ground2" type="Sprite2D" parent="." unique_id=707927662]
+position = Vector2(2199, 3178)
+scale = Vector2(7.237304, 1)
+texture = ExtResource("1_j6ete")

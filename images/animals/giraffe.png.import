@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5y014tf7oa1d"
-path="res://.godot/imported/hedgehog.png-e30c00bb6020416f53af14628a1fb542.ctex"
+uid="uid://nlr0iiob713j"
+path="res://.godot/imported/giraffe.png-327c49899a12ae293fca3d1d39544dd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/hedgehog.png"
-dest_files=["res://.godot/imported/hedgehog.png-e30c00bb6020416f53af14628a1fb542.ctex"]
+source_file="res://images/animals/giraffe.png"
+dest_files=["res://.godot/imported/giraffe.png-327c49899a12ae293fca3d1d39544dd6.ctex"]
 
 [params]
 

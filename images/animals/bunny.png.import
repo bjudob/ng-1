@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1v8c6mib55f6"
-path="res://.godot/imported/bearface.png-d74b3ae4697da0553054f2744d45e0ad.ctex"
+uid="uid://lqtk3rqd2pdh"
+path="res://.godot/imported/bunny.png-515884d1c92b279d3e027e7781b8bcff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/bearface.png"
-dest_files=["res://.godot/imported/bearface.png-d74b3ae4697da0553054f2744d45e0ad.ctex"]
+source_file="res://images/animals/bunny.png"
+dest_files=["res://.godot/imported/bunny.png-515884d1c92b279d3e027e7781b8bcff.ctex"]
 
 [params]
 

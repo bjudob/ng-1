@@ -5,34 +5,22 @@
 &"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "Happy Bear",
-"sound_moods": {
-"Happy Bear": {
-"mode": 0,
-"name": "Happy Bear",
-"pitch_base": 1.0,
-"pitch_variance": 0.0,
-"skip_characters": 0.0,
-"sound_path": "",
-"volume_base": 0.0,
-"volume_variance": 0.0
-}
-},
-"style": "black_style",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
 "suffix": ""
 },
 &"default_portrait": "Default",
 &"description": "",
-&"display_name": "Bear",
+&"display_name": "Bunny",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://images/animals/bear_profile.png\""
+"image": "\"res://images/animals/bunny_profile.png\""
 },
-"ignore_char_scale": false,
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,

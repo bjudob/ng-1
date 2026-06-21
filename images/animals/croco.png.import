@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6omd4twn73aq"
-path="res://.godot/imported/snail.png-cdef06618f8b259435f218a97705f72f.ctex"
+uid="uid://ceva50timvioa"
+path="res://.godot/imported/croco.png-ba264a1ddd2458762d4db19f275632d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/snail.png"
-dest_files=["res://.godot/imported/snail.png-cdef06618f8b259435f218a97705f72f.ctex"]
+source_file="res://images/animals/croco.png"
+dest_files=["res://.godot/imported/croco.png-ba264a1ddd2458762d4db19f275632d7.ctex"]
 
 [params]
 

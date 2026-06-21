@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bjbthxh6cqi7"]
 
 [ext_resource type="Script" uid="uid://bvtgjk4vjfpuv" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://c5y014tf7oa1d" path="res://images/hedgehog.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://c5y014tf7oa1d" path="res://images/animals/hedgehog.png" id="2_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
 size = Vector2(72, 175)
