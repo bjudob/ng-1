@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b17ibnbtxv1ww"]
+
+[ext_resource type="Script" uid="uid://bpgpdf410mmu5" path="res://scenes/game_ui.gd" id="1_yubou"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yubou"]
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_rns2u"]
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_u001w"]
+font_size = 50
+
+[node name="GameUI" type="Node2D" unique_id=959087772]
+script = ExtResource("1_yubou")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=589008012]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1249710987]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="WordsContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=519564249]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=564465264]
+layout_mode = 2
+text = "Bear  "
+label_settings = SubResource("LabelSettings_yubou")
+
+[node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=958342199]
+layout_mode = 2
+text = "Bunny  "
+label_settings = SubResource("LabelSettings_rns2u")
+
+[node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=1916510132]
+layout_mode = 2
+text = "Temple  "
+label_settings = SubResource("LabelSettings_u001w")
+
+[node name="Label4" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=1832446765]
+layout_mode = 2
+text = "High  "
+label_settings = SubResource("LabelSettings_u001w")

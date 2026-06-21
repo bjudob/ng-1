@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cddrr5xij45ym" path="res://images/plants/tree_3.png" id="21_hw4y7"]
 [ext_resource type="PackedScene" uid="uid://b5yhibgj5vt6y" path="res://scenes/giraffe.tscn" id="25_cccuu"]
 [ext_resource type="Texture2D" uid="uid://c7wgix48twfhp" path="res://images/buildings/temple.png" id="25_ivlcv"]
+[ext_resource type="PackedScene" uid="uid://b17ibnbtxv1ww" path="res://scenes/game_ui.tscn" id="26_8loky"]
 [ext_resource type="PackedScene" uid="uid://clldexxdu30gk" path="res://scenes/snail.tscn" id="26_cccuu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bd26w"]
@@ -32,6 +33,12 @@ shader_parameter/target_color = Color(0.5, 0.5, 0.5, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hw4y7"]
 size = Vector2(2062.0735, 2138.6558)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivlcv"]
+size = Vector2(2046, 2045)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cccuu"]
+size = Vector2(1494.3411, 1002)
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
@@ -266,6 +273,63 @@ scale = Vector2(0.65, 0.65)
 texture = ExtResource("25_ivlcv")
 flip_h = true
 
+[node name="Underground" type="Node2D" parent="." unique_id=774128717]
+
+[node name="Ground1" type="Sprite2D" parent="Underground" unique_id=1628416770]
+position = Vector2(8981, 1209)
+scale = Vector2(0.15, 0.030000009)
+texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Underground/Ground1" unique_id=1755151681]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Underground/Ground1/StaticBody2D" unique_id=1041300497]
+position = Vector2(-5, 0.5)
+shape = SubResource("RectangleShape2D_ivlcv")
+
+[node name="Ground3" type="Sprite2D" parent="Underground" unique_id=936040974]
+position = Vector2(8807.001, 1473)
+scale = Vector2(0.15, 0.030000009)
+texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Underground/Ground3" unique_id=2074596557]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Underground/Ground3/StaticBody2D" unique_id=74189855]
+position = Vector2(-5, 0.5)
+shape = SubResource("RectangleShape2D_ivlcv")
+
+[node name="Ground4" type="Sprite2D" parent="Underground" unique_id=552339204]
+position = Vector2(9114.001, 1740)
+scale = Vector2(0.15, 0.030000009)
+texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Underground/Ground4" unique_id=627203792]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Underground/Ground4/StaticBody2D" unique_id=1380860688]
+position = Vector2(-5, 0.5)
+shape = SubResource("RectangleShape2D_ivlcv")
+
+[node name="Ground5" type="Sprite2D" parent="Underground" unique_id=1202877641]
+position = Vector2(8810, 1984)
+scale = Vector2(0.15, 0.030000009)
+texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Underground/Ground5" unique_id=115158739]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Underground/Ground5/StaticBody2D" unique_id=172041035]
+position = Vector2(-5, 0.5)
+shape = SubResource("RectangleShape2D_ivlcv")
+
+[node name="Ground2" type="Sprite2D" parent="Underground" unique_id=707927662]
+position = Vector2(2199, 3178)
+scale = Vector2(7.237304, 1)
+texture = ExtResource("1_j6ete")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Underground/Ground2" unique_id=1042751003]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Underground/Ground2/StaticBody2D" unique_id=585036157]
+position = Vector2(275.86246, -501)
+shape = SubResource("RectangleShape2D_cccuu")
+
 [node name="Camera" parent="." unique_id=2001042165 instance=ExtResource("1_g33r8")]
 
 [node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("13_un8nv")]
@@ -287,7 +351,7 @@ position = Vector2(-219, 956)
 
 [node name="Player" parent="." unique_id=2088576898 instance=ExtResource("21_2bjcw")]
 z_index = 10
-position = Vector2(863, 1079)
+position = Vector2(1427, 1060)
 
 [node name="Squirrel" parent="." unique_id=2007977447 instance=ExtResource("21_4girb")]
 position = Vector2(3429, 509)
@@ -298,11 +362,4 @@ position = Vector2(5109, 599)
 [node name="Snail" parent="." unique_id=1885918394 instance=ExtResource("26_cccuu")]
 position = Vector2(2725, 1076)
 
-[node name="Ground1" type="Sprite2D" parent="." unique_id=1628416770]
-position = Vector2(9757, 2193)
-texture = ExtResource("1_j6ete")
-
-[node name="Ground2" type="Sprite2D" parent="." unique_id=707927662]
-position = Vector2(2199, 3178)
-scale = Vector2(7.237304, 1)
-texture = ExtResource("1_j6ete")
+[node name="GameUI" parent="." unique_id=959087772 instance=ExtResource("26_8loky")]
