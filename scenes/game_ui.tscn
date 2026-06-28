@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://b17ibnbtxv1ww"]
 
 [ext_resource type="Script" uid="uid://bpgpdf410mmu5" path="res://scenes/game_ui.gd" id="1_yubou"]
+[ext_resource type="Texture2D" uid="uid://6vuprc1dlj01" path="res://images/items/axe.png" id="2_bt76a"]
+[ext_resource type="Texture2D" uid="uid://batqgw5fqlg2a" path="res://images/items/mushroom.png" id="3_djwj0"]
+[ext_resource type="Texture2D" uid="uid://desrc5q0cixqk" path="res://images/items/pickaxe.png" id="4_e0pfi"]
+[ext_resource type="Texture2D" uid="uid://pdmif5gei8pq" path="res://images/items/poison.png" id="5_o3bws"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yubou"]
 font_size = 50
@@ -24,30 +28,60 @@ anchor_bottom = 1.0
 offset_top = -200.0
 grow_horizontal = 2
 grow_vertical = 0
+size_flags_vertical = 8
 theme_override_constants/margin_left = 100
 theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 100
 
-[node name="WordsContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=519564249]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=118653801]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="ItemsContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=469409017]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=564465264]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer/VBoxContainer/ItemsContainer" unique_id=15654174]
+layout_mode = 2
+texture = ExtResource("2_bt76a")
+expand_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/MarginContainer/VBoxContainer/ItemsContainer" unique_id=951086912]
+layout_mode = 2
+texture = ExtResource("3_djwj0")
+expand_mode = 3
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/MarginContainer/VBoxContainer/ItemsContainer" unique_id=315706185]
+layout_mode = 2
+texture = ExtResource("4_e0pfi")
+expand_mode = 3
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/MarginContainer/VBoxContainer/ItemsContainer" unique_id=709860363]
+layout_mode = 2
+texture = ExtResource("5_o3bws")
+expand_mode = 3
+
+[node name="WordsContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=519564249]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/WordsContainer" unique_id=564465264]
 layout_mode = 2
 text = "Bear  "
 label_settings = SubResource("LabelSettings_yubou")
 
-[node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=958342199]
+[node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/WordsContainer" unique_id=958342199]
 layout_mode = 2
 text = "Bunny  "
 label_settings = SubResource("LabelSettings_rns2u")
 
-[node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=1916510132]
+[node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/WordsContainer" unique_id=1916510132]
 layout_mode = 2
 text = "Temple  "
 label_settings = SubResource("LabelSettings_u001w")
 
-[node name="Label4" type="Label" parent="CanvasLayer/MarginContainer/WordsContainer" unique_id=1832446765]
+[node name="Label4" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/WordsContainer" unique_id=1832446765]
 layout_mode = 2
 text = "High  "
 label_settings = SubResource("LabelSettings_u001w")

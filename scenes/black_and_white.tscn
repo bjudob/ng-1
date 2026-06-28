@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cd3fddw8v4y81"]
 
+[ext_resource type="Texture2D" uid="uid://cphrsfsxvjdhk" path="res://white.png" id="1_386ay"]
 [ext_resource type="PackedScene" uid="uid://cdcnpwg2gu7ab" path="res://scenes/camera.tscn" id="1_g33r8"]
 [ext_resource type="Texture2D" uid="uid://ca42yqohb0114" path="res://images/plants/ground_1.png" id="1_j6ete"]
 [ext_resource type="AudioStream" uid="uid://uefwmone33mp" path="res://music/dark_orchestra.mp3" id="1_uru6d"]
@@ -26,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://c7wgix48twfhp" path="res://images/buildings/temple.png" id="25_ivlcv"]
 [ext_resource type="PackedScene" uid="uid://b17ibnbtxv1ww" path="res://scenes/game_ui.tscn" id="26_8loky"]
 [ext_resource type="PackedScene" uid="uid://clldexxdu30gk" path="res://scenes/snail.tscn" id="26_cccuu"]
+[ext_resource type="Texture2D" uid="uid://ctyjidnxkone3" path="res://lila.png" id="27_8loky"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bd26w"]
 shader = ExtResource("3_bd26w")
@@ -41,6 +43,13 @@ size = Vector2(2046, 2045)
 size = Vector2(1494.3411, 1002)
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
+
+[node name="BackgroundColor" type="Sprite2D" parent="." unique_id=1265204666]
+visible = false
+modulate = Color(0.6696667, 0.27395758, 0.31521547, 1)
+position = Vector2(2257, 1785.499)
+scale = Vector2(13.002932, 8.249511)
+texture = ExtResource("1_386ay")
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=2119095027]
 stream = ExtResource("1_uru6d")
@@ -363,3 +372,8 @@ position = Vector2(5109, 599)
 position = Vector2(2725, 1076)
 
 [node name="GameUI" parent="." unique_id=959087772 instance=ExtResource("26_8loky")]
+
+[node name="Lila" type="Sprite2D" parent="." unique_id=384931878]
+position = Vector2(3873, 966)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("27_8loky")

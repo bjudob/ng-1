@@ -1,7 +1,7 @@
 extends Node2D
 
 
-@onready var wordsContainer = $CanvasLayer/MarginContainer/WordsContainer
+@onready var wordsContainer = $CanvasLayer/MarginContainer/VBoxContainer/WordsContainer
 
 var collectedWords = ["Cow", "Grass", "Cut"]
 
