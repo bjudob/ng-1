@@ -10,19 +10,22 @@
 [ext_resource type="Texture2D" uid="uid://d2mb6y8ifge0x" path="res://images/white/tree_1.png" id="5_0ckj0"]
 [ext_resource type="Texture2D" uid="uid://s6aseld1ujlb" path="res://images/white/tree_2.png" id="6_2w3ym"]
 [ext_resource type="Texture2D" uid="uid://cwvp484dr0fd6" path="res://images/white/tree_3.png" id="7_7nv3o"]
+[ext_resource type="PackedScene" uid="uid://d3rul46ijlmgl" path="res://scenes/raining_blood.tscn" id="9_cbtvm"]
+[ext_resource type="PackedScene" uid="uid://c7m8tx1oisgq7" path="res://scenes/bat.tscn" id="11_2w3ym"]
+[ext_resource type="PackedScene" uid="uid://bfs0amee2tltg" path="res://scenes/bunny.tscn" id="12_ywdtn"]
+[ext_resource type="PackedScene" uid="uid://bdnkwc4xwov20" path="res://scenes/croco.tscn" id="13_cbtvm"]
+[ext_resource type="Texture2D" uid="uid://c7wgix48twfhp" path="res://images/buildings/temple.png" id="14_nx0v8"]
+[ext_resource type="PackedScene" uid="uid://b5yhibgj5vt6y" path="res://scenes/giraffe.tscn" id="15_5b0h7"]
+[ext_resource type="PackedScene" uid="uid://clldexxdu30gk" path="res://scenes/snail.tscn" id="17_5b0h7"]
+[ext_resource type="PackedScene" uid="uid://bkudb4dy6uohv" path="res://scenes/squirrel.tscn" id="18_0pmrt"]
 
 [node name="Platformer" type="Node2D" unique_id=639270156]
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=884782212]
 stream = ExtResource("1_gk7h0")
 
-[node name="Camera" parent="." unique_id=2001042165 instance=ExtResource("2_7r3nf")]
-position = Vector2(-16, -2.000122)
-scale = Vector2(13.002932, 8.249511)
-
 [node name="BackgroundColor" type="Sprite2D" parent="." unique_id=1956307819]
-visible = false
-modulate = Color(0.6696667, 0.27395758, 0.31521547, 1)
+modulate = Color(0.27450982, 0.33333334, 0.2627451, 1)
 position = Vector2(2257, 1785.499)
 scale = Vector2(13.002932, 8.249511)
 texture = ExtResource("2_t8ltx")
@@ -112,75 +115,75 @@ scroll_scale = Vector2(0.7, 0.7)
 modulate = Color(0.3019608, 0.4117647, 0.3254902, 1)
 
 [node name="Tree1" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=2059620169]
-position = Vector2(122, 467)
+position = Vector2(215, 447)
 texture = ExtResource("5_0ckj0")
 
 [node name="Tree2" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1919178020]
-position = Vector2(402, 476)
+position = Vector2(495, 456)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree3" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=493118039]
-position = Vector2(727, 485)
+position = Vector2(820, 465)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree4" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=207931247]
-position = Vector2(1163, 516)
+position = Vector2(1256, 496)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree5" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1834325694]
-position = Vector2(1559, 663)
+position = Vector2(1652, 643)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree6" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1313523100]
-position = Vector2(1844, 654)
+position = Vector2(1937, 634)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree7" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1233389235]
-position = Vector2(2137, 494)
+position = Vector2(2230, 474)
 texture = ExtResource("5_0ckj0")
 
 [node name="Tree8" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1213006863]
-position = Vector2(2417, 503)
+position = Vector2(2510, 483)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree9" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=939886911]
-position = Vector2(2742, 512)
+position = Vector2(2835, 492)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree10" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=665137979]
-position = Vector2(3178, 543)
+position = Vector2(3271, 523)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree11" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=953843181]
-position = Vector2(3574, 690)
+position = Vector2(3667, 670)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree12" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=884498198]
-position = Vector2(3859, 681)
+position = Vector2(3952, 661)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree13" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1774501251]
-position = Vector2(-1595, 467)
+position = Vector2(-1502, 447)
 texture = ExtResource("5_0ckj0")
 
 [node name="Tree14" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=45835649]
-position = Vector2(-1315, 476)
+position = Vector2(-1222, 456)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree15" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=899492384]
-position = Vector2(-990, 485)
+position = Vector2(-897, 465)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree16" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1923044965]
-position = Vector2(-554, 516)
+position = Vector2(-461, 496)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree17" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=1709420958]
-position = Vector2(-158, 663)
+position = Vector2(-65, 643)
 texture = ExtResource("6_2w3ym")
 
 [node name="Tree18" type="Sprite2D" parent="Backbackbackground/Backbackbackground" unique_id=2038282899]
-position = Vector2(127, 654)
+position = Vector2(220, 634)
 texture = ExtResource("6_2w3ym")
 
 [node name="Backbackground" type="Parallax2D" parent="." unique_id=14451467]
@@ -379,14 +382,59 @@ texture = ExtResource("6_2w3ym")
 position = Vector2(154, 563)
 texture = ExtResource("7_7nv3o")
 
+[node name="Node2D" type="Node2D" parent="Foreground" unique_id=1300770003]
+
 [node name="Ground" parent="." unique_id=1156641486 instance=ExtResource("2_or1io")]
 position = Vector2(1315, 1574)
 scale = Vector2(3.0799987, 1)
+
+[node name="Camera" parent="." unique_id=2001042165 instance=ExtResource("2_7r3nf")]
+position = Vector2(-16, -2.000122)
+scale = Vector2(13.002932, 8.249511)
+
+[node name="RainingBlood" parent="." unique_id=1064453585 instance=ExtResource("9_cbtvm")]
+position = Vector2(1164, -64)
 
 [node name="Bear" parent="." unique_id=4868764 instance=ExtResource("3_k1ntv")]
 position = Vector2(683, 1314)
 scale = Vector2(0.35, 0.35)
 
 [node name="Player" parent="." unique_id=2088576898 instance=ExtResource("2_k1ntv")]
+z_index = 100
 position = Vector2(1238.0001, 1411)
 scale = Vector2(0.7, 0.7)
+
+[node name="Bat" parent="." unique_id=194123093 instance=ExtResource("11_2w3ym")]
+position = Vector2(950, 406)
+scale = Vector2(0.6, 0.6)
+
+[node name="Bunny" parent="." unique_id=1583622104 instance=ExtResource("12_ywdtn")]
+position = Vector2(1785.0001, 1406)
+scale = Vector2(0.6, 0.6)
+
+[node name="Croco" parent="." unique_id=2104192547 instance=ExtResource("13_cbtvm")]
+position = Vector2(2777, 1351)
+scale = Vector2(-0.6, 0.6)
+
+[node name="Temple" type="Sprite2D" parent="." unique_id=774176960]
+position = Vector2(3233, 865)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("14_nx0v8")
+
+[node name="Giraffe" parent="." unique_id=1230117631 instance=ExtResource("15_5b0h7")]
+position = Vector2(-710, 910)
+
+[node name="Snail" parent="." unique_id=1885918394 instance=ExtResource("17_5b0h7")]
+position = Vector2(3437.0002, 1434)
+scale = Vector2(0.6, 0.6)
+
+[node name="SquirrelTree" type="Sprite2D" parent="." unique_id=1665485874]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-1675.3999, 1131.6)
+scale = Vector2(-0.4, 0.4)
+texture = ExtResource("7_7nv3o")
+
+[node name="Squirrel" parent="." unique_id=2007977447 instance=ExtResource("18_0pmrt")]
+position = Vector2(-1664.3999, 828.6)
+rotation = 3.1415927
+scale = Vector2(1, -1)
