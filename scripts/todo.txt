@@ -1,7 +1,9 @@
+- animate plants when passing through
+- camera less sensitive V
 - 3 layer parallax
 - menu on esc
-- game ui, inventory
-- add characters
-- basic dialog
++ game ui, inventory
++ add characters
++ basic dialog
 - outline shader from rk3
 - dialog sound

@@ -44,15 +44,15 @@ size = Vector2(1494.3411, 1002)
 
 [node name="BlackAndWhite" type="Node2D" unique_id=1320135366]
 
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=2119095027]
+stream = ExtResource("1_uru6d")
+
 [node name="BackgroundColor" type="Sprite2D" parent="." unique_id=1265204666]
 visible = false
 modulate = Color(0.6696667, 0.27395758, 0.31521547, 1)
 position = Vector2(2257, 1785.499)
 scale = Vector2(13.002932, 8.249511)
 texture = ExtResource("1_386ay")
-
-[node name="Music" type="AudioStreamPlayer" parent="." unique_id=2119095027]
-stream = ExtResource("1_uru6d")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1776308443]
 scroll_scale = Vector2(0.9, 0.9)

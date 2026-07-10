@@ -2,11 +2,13 @@ extends Camera2D
 
 @onready var player = $"../Player"
 const SPEED = 2
-const DISTANCE_TO_TRIGGER_MOVE = 500
+const TRIGGER_DISTANCE_H = 500
+const TRIGGER_DISTANCE_V = 300
 
 
 var halfScreen
-var moveTriggered
+var moveTriggeredH
+var moveTriggeredV
 var cameraHeight
 
 # Called when the node enters the scene tree for the first time.
@@ -22,15 +24,21 @@ func _process(_delta: float) -> void:
 	var fixedOnPlayer = target - halfScreen - Vector2(0, cameraHeight)
 	var direction = (fixedOnPlayer - position).normalized()
 	
-	var onSide = abs(position.x - fixedOnPlayer.x) > DISTANCE_TO_TRIGGER_MOVE
-	if onSide:
-		moveTriggered = true
+	var onSideH = abs(position.x - fixedOnPlayer.x) > TRIGGER_DISTANCE_H
+	var onSideV = abs(position.y - fixedOnPlayer.y) > TRIGGER_DISTANCE_V
+	
+	if onSideH:
+		moveTriggeredH = true
+	if onSideV:
+		moveTriggeredV = true
+		
 	var onCenter = abs(position.x - fixedOnPlayer.x) < 20
 	if onCenter:
-		moveTriggered = false
+		moveTriggeredH = false
 	
-	if moveTriggered:
+	if moveTriggeredH:
 		position.x = position.x + direction.x * SPEED
-		position.y = position.y + direction.y * SPEED
+	#if moveTriggeredV:
+	#	position.y = position.y + direction.y * SPEED
 	
 	
